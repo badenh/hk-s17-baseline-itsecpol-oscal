@@ -1,0 +1,33 @@
+profile:
+  uuid: fc63d8ab-fba9-5eed-bb16-5e9f78cb4719
+  metadata:
+    title: S17 Section 16 — System Acquisition, Development and Maintenance
+    published: '2025-04-01T00:00:00+08:00'
+    last-modified: '2025-04-01T00:00:00+08:00'
+    version: '8.2'
+    oscal-version: 1.2.3
+    props:
+    - name: profile-axis
+      value: security-area
+    links:
+    - href: https://www.govcert.gov.hk/doc/S17_EN.pdf
+      rel: canonical
+      media-type: application/pdf
+    remarks: 'The 9 policy statements of section 16 of S17, System Acquisition, Development and Maintenance.
+      One of the fourteen mandatory security areas listed in section 2.1. This is a scoping profile, not
+      a reduced baseline: the statements it omits are no less binding, they are simply in other areas.'
+  imports:
+  - href: ../catalogs/s17.yaml
+    include-controls:
+    - with-ids:
+      - s17-16.1.1
+      - s17-16.2.1
+      - s17-16.2.2
+      - s17-16.2.3
+      - s17-16.2.4
+      - s17-16.2.5
+      - s17-16.2.6
+      - s17-16.2.7
+      - s17-16.3.1
+  merge:
+    as-is: true

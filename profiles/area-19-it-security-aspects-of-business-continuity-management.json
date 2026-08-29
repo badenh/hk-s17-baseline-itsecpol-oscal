@@ -1,0 +1,42 @@
+{
+  "profile": {
+    "uuid": "7b29f990-782a-5d23-a528-e091f52ba969",
+    "metadata": {
+      "title": "S17 Section 19 — IT Security Aspects of Business Continuity Management",
+      "published": "2025-04-01T00:00:00+08:00",
+      "last-modified": "2025-04-01T00:00:00+08:00",
+      "version": "8.2",
+      "oscal-version": "1.2.3",
+      "props": [
+        {
+          "name": "profile-axis",
+          "value": "security-area"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://www.govcert.gov.hk/doc/S17_EN.pdf",
+          "rel": "canonical",
+          "media-type": "application/pdf"
+        }
+      ],
+      "remarks": "The 2 policy statements of section 19 of S17, IT Security Aspects of Business Continuity Management. One of the fourteen mandatory security areas listed in section 2.1. This is a scoping profile, not a reduced baseline: the statements it omits are no less binding, they are simply in other areas."
+    },
+    "imports": [
+      {
+        "href": "../catalogs/s17.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "s17-19.1.1",
+              "s17-19.2.1"
+            ]
+          }
+        ]
+      }
+    ],
+    "merge": {
+      "as-is": true
+    }
+  }
+}

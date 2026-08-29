@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="6a088e59-75ee-57c3-990c-f9a407d2a258">
+   <metadata>
+      <title>Baseline IT Security Policy (S17) — Full Baseline</title>
+      <published>2025-04-01T00:00:00+08:00</published>
+      <last-modified>2025-04-01T00:00:00+08:00</last-modified>
+      <version>8.2</version>
+      <oscal-version>1.2.3</oscal-version>
+      <prop name="profile-axis" value="security-area" />
+      <link href="https://www.govcert.gov.hk/doc/S17_EN.pdf" rel="canonical" media-type="application/pdf" />
+      <remarks>
+         <p>Every policy statement in sections 7 to 20 of S17, the fourteen security areas section 2.1 enumerates. S17 defines no assurance levels or system tiers to select between, so this profile is the whole policy and is the profile to assess against unless you have a reason to scope to one area. 136 of the 142 statements are mandatory under section 4.2's 'shall'; five are best practice under 'should' and one uses no convention word. Each control records which, as props[name=conformance] — the catalog marks the distinction rather than profiling on it.</p>
+      </remarks>
+   </metadata>
+   <import href="../catalogs/s17.xml">
+      <include-all />
+   </import>
+   <merge>
+      <as-is>true</as-is>
+   </merge>
+</profile>

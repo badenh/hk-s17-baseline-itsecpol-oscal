@@ -1,0 +1,31 @@
+profile:
+  uuid: e268bf0c-c5ff-5490-850a-df434f11b64a
+  metadata:
+    title: S17 Section 17 — Outsourcing Security
+    published: '2025-04-01T00:00:00+08:00'
+    last-modified: '2025-04-01T00:00:00+08:00'
+    version: '8.2'
+    oscal-version: 1.2.3
+    props:
+    - name: profile-axis
+      value: security-area
+    links:
+    - href: https://www.govcert.gov.hk/doc/S17_EN.pdf
+      rel: canonical
+      media-type: application/pdf
+    remarks: 'The 7 policy statements of section 17 of S17, Outsourcing Security. One of the fourteen
+      mandatory security areas listed in section 2.1. This is a scoping profile, not a reduced baseline:
+      the statements it omits are no less binding, they are simply in other areas.'
+  imports:
+  - href: ../catalogs/s17.yaml
+    include-controls:
+    - with-ids:
+      - s17-17.1.1
+      - s17-17.1.2
+      - s17-17.2.1
+      - s17-17.2.2
+      - s17-17.2.3
+      - s17-17.3.1
+      - s17-17.3.2
+  merge:
+    as-is: true

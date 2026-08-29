@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="fc63d8ab-fba9-5eed-bb16-5e9f78cb4719">
+   <metadata>
+      <title>S17 Section 16 — System Acquisition, Development and Maintenance</title>
+      <published>2025-04-01T00:00:00+08:00</published>
+      <last-modified>2025-04-01T00:00:00+08:00</last-modified>
+      <version>8.2</version>
+      <oscal-version>1.2.3</oscal-version>
+      <prop name="profile-axis" value="security-area" />
+      <link href="https://www.govcert.gov.hk/doc/S17_EN.pdf" rel="canonical" media-type="application/pdf" />
+      <remarks>
+         <p>The 9 policy statements of section 16 of S17, System Acquisition, Development and Maintenance. One of the fourteen mandatory security areas listed in section 2.1. This is a scoping profile, not a reduced baseline: the statements it omits are no less binding, they are simply in other areas.</p>
+      </remarks>
+   </metadata>
+   <import href="../catalogs/s17.xml">
+      <include-controls>
+         <with-id>s17-16.1.1</with-id>
+         <with-id>s17-16.2.1</with-id>
+         <with-id>s17-16.2.2</with-id>
+         <with-id>s17-16.2.3</with-id>
+         <with-id>s17-16.2.4</with-id>
+         <with-id>s17-16.2.5</with-id>
+         <with-id>s17-16.2.6</with-id>
+         <with-id>s17-16.2.7</with-id>
+         <with-id>s17-16.3.1</with-id>
+      </include-controls>
+   </import>
+   <merge>
+      <as-is>true</as-is>
+   </merge>
+</profile>

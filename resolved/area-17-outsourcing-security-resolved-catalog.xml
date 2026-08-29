@@ -1,0 +1,437 @@
+<?xml version='1.0' encoding='utf-8'?>
+<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="674e4db9-c22c-5e42-ac16-19043efcb165">
+   <metadata>
+      <title>S17 Section 17 — Outsourcing Security (resolved profile catalog)</title>
+      <published>2025-04-01T00:00:00+08:00</published>
+      <last-modified>2025-04-01T00:00:00+08:00</last-modified>
+      <version>8.2</version>
+      <oscal-version>1.2.3</oscal-version>
+      <document-id scheme="https://www.govcert.gov.hk/">S17</document-id>
+      <prop name="keywords" value="Hong Kong, HKSAR, baseline, IT security policy, S17, government, ISO/IEC 27001, ISO/IEC 27002" />
+      <link href="https://www.govcert.gov.hk/doc/S17_EN.pdf" rel="canonical" media-type="application/pdf" />
+      <role id="ismc">
+         <title>Information Security Management Committee</title>
+         <short-name>ISMC</short-name>
+         <description>
+            <p>A central organisation, the Information Security Management Committee (ISMC), was established in April 2000 to oversee IT security within the whole Government. The Committee meets on a regular basis to:</p>
+            <ul>
+               <li>Review and endorse changes to the government IT security related regulations, policies and guidelines;</li>
+               <li>Define specific roles and responsibilities relating to IT security; and</li>
+               <li>Provide guidance and assistance to B/Ds in the enforcement of IT security related regulations, policies, and guidelines through the IT Security Working Group (ITSWG).</li>
+            </ul>
+            <p>The core members of ISMC comprise representatives from:</p>
+            <ul>
+               <li>Digital Policy Office (DPO)</li>
+               <li>Security Bureau (SB)</li>
+            </ul>
+            <p>Representative(s) from other B/Ds will be co-opted into the committee on a need basis in relation to specific subject matters. DPO will assist in reviewing and clarifying the documents submitted by B/Ds as required in this document.</p>
+         </description>
+         <prop name="source-clause" value="section 5.1.1" />
+      </role>
+      <role id="itswg">
+         <title>IT Security Working Group</title>
+         <short-name>ITSWG</short-name>
+         <description>
+            <p>The IT Security Working Group (ITSWG) serves as the executive arm of the ISMC in the promulgation and compliance monitoring of government IT security related regulations, policies and guidelines. The ITSWG was established in May 2000, and its responsibilities are to:</p>
+            <ul>
+               <li>Co-ordinate activities aimed at providing guidance and assistance to B/Ds in the enforcement of IT security related regulations, policies and guidelines;</li>
+               <li>Monitor the compliance with the Baseline IT Security Policy at B/Ds;</li>
+               <li>Define and review the IT security related regulations, policies and guidelines; and</li>
+               <li>Promote IT security awareness within the Government.</li>
+            </ul>
+            <p>The core members of ITSWG comprise representatives from:</p>
+            <ul>
+               <li>Digital Policy Office (DPO)</li>
+               <li>Security Bureau (SB)</li>
+               <li>Hong Kong Police Force (HKPF)</li>
+               <li>Chief Secretary for Administration’s Office (CSO)</li>
+            </ul>
+            <p>Representative(s) from other B/Ds will be co-opted into the working group on a need basis, in relation to specific subject matters.</p>
+         </description>
+         <prop name="source-clause" value="section 5.1.2" />
+      </role>
+      <role id="giro">
+         <title>Government Information Security Incident Response Office</title>
+         <short-name>GIRO</short-name>
+         <description>
+            <p>To handle information security incidents occurring in B/Ds, an Information Security Incident Response Team (ISIRT) shall be established in each B/D. The Government Information Security Incident Response Office (GIRO) provides central co-ordination and support to the operation of individual ISIRTs of B/Ds. The GIRO Standing Office serves as the executive arm of GIRO.</p>
+            <p>The GIRO has the following major functions:</p>
+            <ul>
+               <li>Maintain a central inventory and oversee the handling of all information security incidents in the Government;</li>
+               <li>Prepare periodic statistics reports on government information security incidents;</li>
+               <li>Act as a central office to co-ordinate the handling of multiple-point security attacks (i.e. simultaneous attacks on different government information systems); and</li>
+               <li>Enable experience sharing and information exchange related to information security incident handling among ISIRTs of different B/Ds.</li>
+            </ul>
+            <p>The core members of GIRO comprise representatives from:</p>
+            <ul>
+               <li>Digital Policy Office (DPO)</li>
+               <li>Security Bureau (SB)</li>
+               <li>Hong Kong Police Force (HKPF)</li>
+            </ul>
+         </description>
+         <prop name="source-clause" value="section 5.1.3" />
+      </role>
+      <role id="govcert-hk">
+         <title>Government Computer Emergency Response Team Hong Kong</title>
+         <short-name>GovCERT.HK</short-name>
+         <description>
+            <p>The Government Computer Emergency Response Team Hong Kong (GovCERT.HK) was established in April 2015. In addition to collaborating with GIRO Standing Office in co-ordinating information and cyber security incidents within the Government, it also collaborates with the computer emergency response team community in sharing incident information and threat intelligence, and exchanging best practices to strengthen information and cyber security capabilities in the region. GovCERT.HK has the following major functions:</p>
+            <ul>
+               <li>Disseminate security alerts on impending and actual threats to B/Ds; and</li>
+               <li>Act as a bridge between the Hong Kong Computer Emergency Response Team Coordination Centre (HKCERT) and other computer security incident response teams (CSIRT) in handling cyber security incidents.</li>
+            </ul>
+         </description>
+         <prop name="source-clause" value="section 5.1.4" />
+      </role>
+      <role id="bureaux-departments">
+         <title>Bureaux/Departments</title>
+         <description>
+            <p>B/Ds shall be responsible for the security protection of their information assets and information systems. The roles and responsibilities of IT security staff within a B/D are detailed in Section 5.2 - Departmental IT Security Organisation.</p>
+            <p>5.2. Departmental IT Security Organisation</p>
+            <p>This section explains the individual roles and responsibilities of a departmental IT security organisation. In order to have sufficient segregation of duties, multiple roles should not be assigned to an individual unless there is a resource limitation.</p>
+            <p>The following diagram describes a sample departmental IT security management framework:</p>
+            <p>An Example Organisation Chart for Departmental IT Security Management 1</p>
+         </description>
+         <prop name="source-clause" value="section 5.1.5" />
+      </role>
+      <role id="ditso">
+         <title>Departmental IT Security Officer</title>
+         <short-name>DITSO</short-name>
+         <description>
+            <p>Head of B/D shall appoint an officer at D3 level or above from the senior management to be the Departmental IT Security Officer (DITSO) and responsible for IT security. As the senior management of the B/D, the DITSO shall participate in the overall steering of IT security matters of the B/D. The DITSO shall also understand the B/D’s priorities, the importance of the B/D’s information systems and data assets, and the level of security that shall be achieved.</p>
+            <p>If a B/D does not have a directorate officer at D3 level or above, the highest rank</p>
+            <p>directorate officer of the B/D shall assume the position of DITSO so as to uphold the principle of ensuring accountability in IT security.</p>
+            <p>SB and DPO will provide training to DITSOs to facilitate them in carrying out their duties and DITSOs shall attend the designated training. The roles and responsibilities of DITSO shall be clearly defined, which include but are not limited to the following:</p>
+            <ul>
+               <li>Establish and maintain an information protection program to assist all staff in the protection of the information and information systems they use;</li>
+               <li>Establish a proper security governance process to evaluate, direct, monitor and communicate the IT security related activities within the B/D;</li>
+               <li>Drive regular discussions on IT security issues at the senior management level to acquire adequate support and resources;</li>
+               <li>Lead in the establishment, maintenance and implementation of IT security policies, standards, procedures and guidelines;</li>
+               <li>Oversee, monitor, review and improve the effectiveness and efficiency of IT security management throughout every stage of IT operations;</li>
+               <li>Monitor and ensure compliance with the government IT security requirements, including overseeing the satisfactory completion of security audit exercises of the B/D;</li>
+               <li>Oversee the overall IT security awareness and training programmes within the B/D;</li>
+               <li>Co-ordinate with other B/Ds on IT security issues;</li>
+               <li>Oversee the overall IT risk management process within the B/D, including overseeing the satisfactory completion of information security risk assessments and privacy impact assessments as well as subsequent rectifications and responding to the evolving risk landscape, regulatory changes, technological advancements, and the system criticality;</li>
+               <li>Oversee the IT security threat detection and monitoring process and the threat intelligence activities of the B/D, including dissemination of security alerts on impending and actual threats from the GIRO to responsible parties within the B/D and relevant project teams; and</li>
+               <li>Initiate investigation and rectification in case of breach of security and co-ordinate the required submission of incident reports to the Director of Bureau.</li>
+            </ul>
+         </description>
+         <prop name="source-clause" value="section 5.2.1" />
+      </role>
+      <role id="information-security-steering-committee">
+         <title>Information Security Steering Committee</title>
+         <description>
+            <p>The senior management of B/Ds shall have an appreciation of IT security, its problems and resolutions. Senior management should consider setting up of an information security steering committee which reports to DITSO, or including information security as one of the regular discussion items in management meetings. The responsibilities of the committee include:</p>
+            <ul>
+               <li>Demonstrate leadership in promoting and prioritising IT security within the B/D;</li>
+               <li>Direct and enforce the development of security measures;</li>
+               <li>Provide the necessary resources required for the measures to be implemented;</li>
+               <li>Foster the proper, orderly and secure functioning of all information systems of the B/D;</li>
+               <li>Ensure participation and accountability at all levels of management, administrative, technical and operational staff, and provide full support to them;</li>
+               <li>Foster a culture of security awareness and accountability throughout the B/D; and</li>
+               <li>Ensure B/D’s IT security strategies align with the business objectives.</li>
+            </ul>
+            <p>If B/Ds choose not to set up an information security steering committee, DITSO should undertake the responsibilities of the committee.</p>
+         </description>
+         <prop name="source-clause" value="section 5.2.2" />
+      </role>
+      <role id="dso">
+         <title>Departmental Security Officer</title>
+         <short-name>DSO</short-name>
+         <description>
+            <p>The Head of B/D will designate a Departmental Security Officer (DSO) to perform the departmental security related duties. The DSO will take the role of an executive to:</p>
+            <ul>
+               <li>Discharge responsibilities for all aspects of security for the B/D; and</li>
+               <li>Advise on the set up and review of the security policy.</li>
+            </ul>
+            <p>The DSO may take on the role of the DITSO. Alternatively, in those B/Ds where someone else is appointed, the DITSO shall collaborate with the DSO to oversee the IT security of the B/D.</p>
+         </description>
+         <prop name="source-clause" value="section 5.2.3" />
+      </role>
+      <role id="isirt-commander">
+         <title>Departmental Information Security Incident Response Team (ISIRT) Commander</title>
+         <short-name>ISIRT</short-name>
+         <description>
+            <p>The ISIRT is the central focal point for co-ordinating the handling of information security incidents occurring within the respective B/D. The Head of B/D should designate an officer from the senior management to be the ISIRT Commander. The ISIRT Commander should have the authority to appoint core team members for the ISIRT. The responsibilities of an ISIRT Commander include:</p>
+            <ul>
+               <li>Provide overall supervision and co-ordination of information security incident handling for all information systems within the B/D;</li>
+               <li>Make decisions on critical matters such as damage containment, system recovery, the engagement of external parties and the extent of involvement, and service resumption logistics after recovery;</li>
+               <li>Trigger the departmental disaster recovery procedure where appropriate, depending on the impact of the incident on the business operation of the B/D;</li>
+               <li>Provide management endorsement on the provision of resources for the incident handling process;</li>
+               <li>Provide management endorsement in respect of the line-to-take for publicity on the incident;</li>
+               <li>Collaborate with GIRO in reporting information security incidents for central</li>
+            </ul>
+            <p>recording and necessary follow-up actions; and</p>
+            <ul>
+               <li>Facilitate experience and information sharing within the B/D on information security incident handling and related matters.</li>
+            </ul>
+         </description>
+         <prop name="source-clause" value="section 5.2.4" />
+      </role>
+      <role id="it-security-management-unit">
+         <title>IT Security Management Unit</title>
+         <description>
+            <p>B/Ds shall establish an IT security management unit which reports to DITSO and assists DITSO in discharging his/her duties. The size and composition of the unit may vary among B/Ds depending on the business and operational needs of B/Ds. The responsibilities of the IT security management unit include:</p>
+            <ul>
+               <li>Assist DITSO in overseeing the security governance process for the IT security related activities within the B/D;</li>
+               <li>Assist DITSO in the IT security management process for all IT operations of the B/D;</li>
+               <li>Assist DITSO in developing, establishing, and maintaining the overall IT security strategy and roadmap for the B/D, including formulating IT security policies, baselines, standards, directives, etc.;</li>
+               <li>Co-ordinate security awareness and training programmes within the B/D;</li>
+               <li>Co-ordinate the implementation of IT security initiatives and monitor the status of IT security processes to ensure the effectiveness of IT security management and compliance with government security requirements;</li>
+               <li>Facilitate IT security threat and risk management activities and support disaster recovery and business continuity planning functions relating to IT security;</li>
+               <li>Co-ordinate security incident investigation and rectification;</li>
+               <li>Liaise with other B/Ds and parties on IT security matters; and</li>
+               <li>Perform any other duties as directed by the DITSO.</li>
+            </ul>
+            <p>5.3. Other Roles</p>
+         </description>
+         <prop name="source-clause" value="section 5.2.5" />
+      </role>
+      <role id="it-security-administrators">
+         <title>IT Security Administrators</title>
+         <description>
+            <p>IT Security Administrators shall be responsible for providing security and risk management related support services. His/her responsibilities also include:</p>
+            <ul>
+               <li>Assist in identifying and mitigating system vulnerabilities;</li>
+               <li>Assist in the patch management process;</li>
+               <li>Conduct security administrative tasks, such as implementing access controls and managing user privileges;</li>
+               <li>Maintain and review audit logs;</li>
+               <li>Monitor threat intelligence sources and stay updated on emerging security threats; and</li>
+               <li>Operate and maintain security tools and systems, such as intrusion detection and prevention systems.</li>
+            </ul>
+            <p>The IT Security Administrator should not be the same person as the System Administrator. There should be a segregation of duties between the IT Security Administrator and the System Administrator.</p>
+            <p>Although the IT Security Administrators are responsible for managing the audit logs, they should not tamper with or change any audit log.</p>
+            <p>B/Ds may appoint an IT Security Auditor, who will be responsible for auditing the work of the IT Security Administrators to ensure that they perform their duties due diligently.</p>
+         </description>
+         <prop name="source-clause" value="section 5.3.1" />
+      </role>
+      <role id="information-owners">
+         <title>Information Owners</title>
+         <description>
+            <p>Information Owners shall be the collators and the owners of information stored in information systems. Their primary responsibility is to:</p>
+            <ul>
+               <li>Determine the data classifications, the authorised data usage, and the corresponding security requirements for protection of the information.</li>
+            </ul>
+         </description>
+         <prop name="source-clause" value="section 5.3.2" />
+      </role>
+      <role id="lan-system-administrators">
+         <title>LAN/System Administrators</title>
+         <description>
+            <p>LAN/System Administrators shall be responsible for the day-to-day administration, operation and configuration of the computer systems and network in B/Ds, whereas Internet System Administrators are responsible for the related tasks for their Internet-facing information systems. Their responsibilities include:</p>
+            <ul>
+               <li>Implement the security mechanisms and controls in accordance with procedures/guidelines established by the DITSO.</li>
+            </ul>
+         </description>
+         <prop name="source-clause" value="section 5.3.3" />
+      </role>
+      <role id="application-development-maintenance-team">
+         <title>Application Development &amp; Maintenance Team</title>
+         <description>
+            <p>The Application Development &amp; Maintenance Team shall be responsible for producing quality systems with the use of quality procedures, techniques and tools. Their responsibilities include:</p>
+            <ul>
+               <li>Liaise with the Information Owner in order to define and implement system security requirements during the development and maintenance of applications; and</li>
+               <li>Ensure quality procedures, techniques, and tools are used to produce secure systems.</li>
+            </ul>
+         </description>
+         <prop name="source-clause" value="section 5.3.4" />
+      </role>
+      <role id="users">
+         <title>Users</title>
+         <description>
+            <p>Users of information systems shall be the staff authorised to access and use the information. Users shall be accountable for all their activities. Responsibilities of a user include:</p>
+            <ul>
+               <li>Attend security awareness and training programmes directed by the B/D;</li>
+               <li>Know, understand, follow and apply all the possible and available security mechanisms to the maximum extent possible;</li>
+               <li>Prevent leakage and unauthorised access to information under his/her custody; and</li>
+               <li>Safekeep computing and storage devices, and protect them from unauthorised access or malicious attack with his/her best effort.</li>
+            </ul>
+         </description>
+         <prop name="source-clause" value="section 5.3.5" />
+      </role>
+      <role id="publisher">
+         <title>Publisher of this document</title>
+         <prop name="source-clause" value="section 21" />
+      </role>
+      <party uuid="b277d0e2-2997-5601-a582-4b11d6e1bbe7" type="organization">
+         <name>Digital Policy Office</name>
+         <short-name>DPO</short-name>
+         <email-address>it_security@digitalpolicy.gov.hk</email-address>
+         <remarks>
+            <p>The Government of the Hong Kong Special Administrative Region of the People's Republic of China. Contact details are as published in section 21 of the source document.</p>
+         </remarks>
+      </party>
+      <responsible-party role-id="publisher">
+         <party-uuid>b277d0e2-2997-5601-a582-4b11d6e1bbe7</party-uuid>
+      </responsible-party>
+      <remarks>
+         <p>Resolved profile catalog: the S17 catalog filtered to the 7 controls selected by the <code>area-17-outsourcing-security</code> profile, with empty groups removed and back-matter reduced to the resources those controls still reference.</p>
+         <p>Unofficial OSCAL rendering of the Baseline IT Security Policy [S17] version 8.2, published by the Digital Policy Office of the Government of the Hong Kong Special Administrative Region. Controls are the numbered policy statements of sections 7 to 20 — the fourteen mandatory security areas listed in section 2.1 — one control per statement, grouped by section and subsection. Control titles are editorial: the source document numbers its statements and does not name them; every control carries a <code>title-source</code> prop recording whether its title came from the conversion's reviewed title map or from an automatic derivation. Sections 5.1 to 5.3 supply metadata.roles; section 3 and section 2.3 supply back-matter resources; section 4.1 supplies the definitions group. This is not an official publication and is not endorsed by the Digital Policy Office.</p>
+      </remarks>
+   </metadata>
+   <group id="s17-definitions" class="front-matter">
+      <title>Definitions</title>
+      <prop name="label" value="4.1." />
+      <part id="s17-definitions_ovw" name="overview">
+         <p>Terms as defined in section 4.1 of the source document. This group carries no controls; it exists so that consumers of the catalog have the document's own vocabulary alongside its requirements.</p>
+      </part>
+      <part id="s17-definitions_a" name="definition">
+         <title>Tier 1 Information Systems</title>
+         <p>A related set of hardware and software organised for the collection, processing, storage, communication, or disposition of information, regardless of the source of funding and project type.</p>
+      </part>
+      <part id="s17-definitions_b" name="definition">
+         <title>Tier 2 Information Systems</title>
+         <p>Tier 1 information systems which are crucial to the operations of the Government or society and whose failure or disruption will result in a serious impact on government operations or may cause public turmoil and catastrophes.</p>
+      </part>
+      <part id="s17-definitions_c" name="definition">
+         <title>Essential Services</title>
+         <p>Services that are critical to the functioning and security of a society and its economy.</p>
+      </part>
+      <part id="s17-definitions_d" name="definition">
+         <title>Tier 3 Information Systems</title>
+         <p>Tier 2 information systems which are directly related to the provision of essential service concerned and whose disruption or destruction may cause serious harm to the economy, people’s livelihood, public safety, etc.</p>
+      </part>
+      <part id="s17-definitions_e" name="definition">
+         <title>Confidentiality</title>
+         <p>Only authorised persons and information systems are allowed to know or gain access to the information stored or processed by information systems in any aspect.</p>
+      </part>
+      <part id="s17-definitions_f" name="definition">
+         <title>Integrity</title>
+         <p>Only authorised persons and information systems are allowed to make changes to the information stored or processed by information systems in any aspect.</p>
+      </part>
+      <part id="s17-definitions_g" name="definition">
+         <title>Availability</title>
+         <p>Information System is accessible and usable upon demand by authorised persons and information systems.</p>
+      </part>
+      <part id="s17-definitions_h" name="definition">
+         <title>IT Security Policy</title>
+         <p>A documented list of management instructions that describes in detail the proper use and management of computer and network resources with the objective of protecting these resources, as well as the information stored or processed by information systems, from any unauthorised disclosure, modifications or destruction.</p>
+      </part>
+      <part id="s17-definitions_i" name="definition">
+         <title>Classified Information</title>
+         <p>Refers to the categories of information classified in accordance with the Security Regulations.</p>
+      </part>
+      <part id="s17-definitions_j" name="definition">
+         <title>Staff</title>
+         <p>A collective term used to describe all personnel employed or whose service is acquired to work for the Government, including all public officers irrespective of the employment period and terms, non-government secondees engaged through employment agencies, and other term contract services personnel, etc., who may have different accessibility to classified information and are subject to different security vetting requirements. Specific requirements governing human resource security are found in Section 9 of S17.</p>
+      </part>
+      <part id="s17-definitions_k" name="definition">
+         <title>Data Centre</title>
+         <p>A centralised data processing facility that houses information systems and related equipment.</p>
+      </part>
+      <part id="s17-definitions_l" name="definition">
+         <title>Computer Room</title>
+         <p>A dedicated room for housing computer equipment.</p>
+      </part>
+      <part id="s17-definitions_m" name="definition">
+         <title>Malware</title>
+         <p>Programs intended to perform an unauthorised process that will have an adverse impact on the confidentiality, integrity, or availability of an information system. Examples of malware include computer viruses, worms, Trojan horses, and spyware.</p>
+      </part>
+      <part id="s17-definitions_n" name="definition">
+         <title>Mobile Devices</title>
+         <p>Portable computing and communication devices with information storage and processing capability. Examples include portable computers, mobile phones, tablets, digital cameras, and audio or video recording devices.</p>
+      </part>
+      <part id="s17-definitions_o" name="definition">
+         <title>Removable Media</title>
+         <p>Portable electronic storage media such as magnetic, optical, and flash memory devices, which can be inserted into and removed from a computing device. Examples include external hard drives or solid-state drives, floppy disks, zip drives, optical disks, tapes, memory cards, flash drives, and similar USB storage devices.</p>
+      </part>
+      <part id="s17-definitions_p" name="definition">
+         <title>Internet of Things (IoT) Devices</title>
+         <p>Devices that have network connectivity and computing capabilities, which function autonomously to interact with the physical environment by ways of sensing or actuation.</p>
+      </part>
+   </group>
+   <group id="s17-17" class="security-area">
+      <title>Outsourcing Security</title>
+      <prop name="label" value="17." />
+      <part id="s17-17_ovw" name="overview">
+         <p>B/Ds shall ensure the protection of information systems and assets that are accessible by external service providers.</p>
+      </part>
+      <group id="s17-17.1" class="topic">
+         <title>IT Security in Outsourcing Service</title>
+         <prop name="label" value="17.1." />
+         <control id="s17-17.1.1" class="policy-statement">
+            <title>External service provider compliance with departmental policy</title>
+            <prop name="label" value="17.1.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-17.1.1_smt" name="statement">
+               <p>External service providers shall observe and comply with B/Ds’ departmental IT security policy and other information security requirements issued by the Government.</p>
+            </part>
+         </control>
+         <control id="s17-17.1.2" class="policy-statement">
+            <title>Risk assessment and security requirements for outsourced services</title>
+            <prop name="label" value="17.1.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-17.1.2_smt" name="statement">
+               <p>B/Ds utilising external services or facilities shall identify and assess the risks to the government data and business operations. Security measures, service levels and management requirements of external services or facilities commensurate with the data classification and business requirements shall be documented and implemented. Security responsibilities of external service providers shall be defined and agreed upon.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-17.2" class="topic">
+         <title>Outsourcing Service Delivery Management</title>
+         <prop name="label" value="17.2." />
+         <control id="s17-17.2.1" class="policy-statement">
+            <title>Monitoring and review of external service providers</title>
+            <prop name="label" value="17.2.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-17.2.1_smt" name="statement">
+               <p>B/Ds shall monitor and review with external service providers to ensure that operations by external service providers are documented and managed properly. Confidentiality and non-disclosure agreements shall be properly managed and reviewed when changes occur that affect the security requirement.</p>
+            </part>
+         </control>
+         <control id="s17-17.2.2" class="policy-statement">
+            <title>Audit and compliance monitoring rights</title>
+            <prop name="label" value="17.2.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-17.2.2_smt" name="statement">
+               <p>B/Ds shall reserve audit and compliance monitoring rights to ensure external service providers have implemented sufficient controls on government information systems, facilities and data. Alternatively, the external service providers shall provide security audit reports periodically to prove the measures put in place are satisfactory.</p>
+            </part>
+         </control>
+         <control id="s17-17.2.3" class="policy-statement">
+            <title>Clearance of government data on service termination</title>
+            <prop name="label" value="17.2.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-17.2.3_smt" name="statement">
+               <p>B/Ds shall ensure all government data in external services or facilities are cleared or destroyed according to government security requirements at the expiry or termination of the service or upon request of the Government.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-17.3" class="topic">
+         <title>Cloud Computing Security</title>
+         <prop name="label" value="17.3." />
+         <control id="s17-17.3.1" class="policy-statement">
+            <title>Restriction on public cloud for RESTRICTED information</title>
+            <prop name="label" value="17.3.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-17.3.1_smt" name="statement">
+               <p>Information classified as RESTRICTED or above shall not be stored in or processed by public cloud services.</p>
+            </part>
+         </control>
+         <control id="s17-17.3.2" class="policy-statement">
+            <title>Shared responsibility with cloud service providers</title>
+            <prop name="label" value="17.3.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-17.3.2_smt" name="statement">
+               <p>Before signing an agreement with a cloud service provider, B/Ds shall ensure that the shared responsibilities of both parties are clearly defined, documented, and understood.</p>
+            </part>
+         </control>
+      </group>
+   </group>
+   <back-matter>
+      <resource uuid="27de4af5-f638-5fed-acab-e252838b598e">
+         <title>Baseline IT Security Policy [S17]</title>
+         <prop name="source-clause" value="the document itself (section 2.3)" />
+         <citation>
+            <text>Digital Policy Office, The Government of the Hong Kong Special Administrative Region, "Baseline IT Security Policy [S17]"</text>
+         </citation>
+         <rlink href="https://www.govcert.gov.hk/doc/S17_EN.pdf" media-type="application/pdf">
+            <hash algorithm="SHA-256">d3f241463df39bda79cd2c2dd6950a076f4f5f5476a92536b01431c180069dde</hash>
+         </rlink>
+      </resource>
+   </back-matter>
+</catalog>

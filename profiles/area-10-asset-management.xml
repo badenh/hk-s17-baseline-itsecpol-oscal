@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="a8b98e83-33bc-5f7d-aeda-fd032734c30d">
+   <metadata>
+      <title>S17 Section 10 — Asset Management</title>
+      <published>2025-04-01T00:00:00+08:00</published>
+      <last-modified>2025-04-01T00:00:00+08:00</last-modified>
+      <version>8.2</version>
+      <oscal-version>1.2.3</oscal-version>
+      <prop name="profile-axis" value="security-area" />
+      <link href="https://www.govcert.gov.hk/doc/S17_EN.pdf" rel="canonical" media-type="application/pdf" />
+      <remarks>
+         <p>The 9 policy statements of section 10 of S17, Asset Management. One of the fourteen mandatory security areas listed in section 2.1. This is a scoping profile, not a reduced baseline: the statements it omits are no less binding, they are simply in other areas.</p>
+      </remarks>
+   </metadata>
+   <import href="../catalogs/s17.xml">
+      <include-controls>
+         <with-id>s17-10.1.1</with-id>
+         <with-id>s17-10.1.2</with-id>
+         <with-id>s17-10.1.3</with-id>
+         <with-id>s17-10.1.4</with-id>
+         <with-id>s17-10.2.1</with-id>
+         <with-id>s17-10.2.2</with-id>
+         <with-id>s17-10.3.1</with-id>
+         <with-id>s17-10.3.2</with-id>
+         <with-id>s17-10.3.3</with-id>
+      </include-controls>
+   </import>
+   <merge>
+      <as-is>true</as-is>
+   </merge>
+</profile>

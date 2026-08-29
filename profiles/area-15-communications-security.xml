@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="42a7376b-af34-501c-91af-9d4174fa6816">
+   <metadata>
+      <title>S17 Section 15 — Communications Security</title>
+      <published>2025-04-01T00:00:00+08:00</published>
+      <last-modified>2025-04-01T00:00:00+08:00</last-modified>
+      <version>8.2</version>
+      <oscal-version>1.2.3</oscal-version>
+      <prop name="profile-axis" value="security-area" />
+      <link href="https://www.govcert.gov.hk/doc/S17_EN.pdf" rel="canonical" media-type="application/pdf" />
+      <remarks>
+         <p>The 17 policy statements of section 15 of S17, Communications Security. One of the fourteen mandatory security areas listed in section 2.1. This is a scoping profile, not a reduced baseline: the statements it omits are no less binding, they are simply in other areas.</p>
+      </remarks>
+   </metadata>
+   <import href="../catalogs/s17.xml">
+      <include-controls>
+         <with-id>s17-15.1.1</with-id>
+         <with-id>s17-15.1.2</with-id>
+         <with-id>s17-15.1.3</with-id>
+         <with-id>s17-15.1.4</with-id>
+         <with-id>s17-15.1.5</with-id>
+         <with-id>s17-15.1.6</with-id>
+         <with-id>s17-15.1.7</with-id>
+         <with-id>s17-15.1.8</with-id>
+         <with-id>s17-15.1.9</with-id>
+         <with-id>s17-15.1.10</with-id>
+         <with-id>s17-15.2.1</with-id>
+         <with-id>s17-15.2.2</with-id>
+         <with-id>s17-15.2.3</with-id>
+         <with-id>s17-15.2.4</with-id>
+         <with-id>s17-15.2.5</with-id>
+         <with-id>s17-15.2.6</with-id>
+         <with-id>s17-15.2.7</with-id>
+      </include-controls>
+   </import>
+   <merge>
+      <as-is>true</as-is>
+   </merge>
+</profile>

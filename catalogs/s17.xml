@@ -1,0 +1,1951 @@
+<?xml version='1.0' encoding='utf-8'?>
+<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="12b3d146-a756-5f4a-847d-e120279d98e1">
+   <metadata>
+      <title>Baseline IT Security Policy (S17)</title>
+      <published>2025-04-01T00:00:00+08:00</published>
+      <last-modified>2025-04-01T00:00:00+08:00</last-modified>
+      <version>8.2</version>
+      <oscal-version>1.2.3</oscal-version>
+      <document-id scheme="https://www.govcert.gov.hk/">S17</document-id>
+      <prop name="keywords" value="Hong Kong, HKSAR, baseline, IT security policy, S17, government, ISO/IEC 27001, ISO/IEC 27002" />
+      <link href="https://www.govcert.gov.hk/doc/S17_EN.pdf" rel="canonical" media-type="application/pdf" />
+      <role id="ismc">
+         <title>Information Security Management Committee</title>
+         <short-name>ISMC</short-name>
+         <description>
+            <p>A central organisation, the Information Security Management Committee (ISMC), was established in April 2000 to oversee IT security within the whole Government. The Committee meets on a regular basis to:</p>
+            <ul>
+               <li>Review and endorse changes to the government IT security related regulations, policies and guidelines;</li>
+               <li>Define specific roles and responsibilities relating to IT security; and</li>
+               <li>Provide guidance and assistance to B/Ds in the enforcement of IT security related regulations, policies, and guidelines through the IT Security Working Group (ITSWG).</li>
+            </ul>
+            <p>The core members of ISMC comprise representatives from:</p>
+            <ul>
+               <li>Digital Policy Office (DPO)</li>
+               <li>Security Bureau (SB)</li>
+            </ul>
+            <p>Representative(s) from other B/Ds will be co-opted into the committee on a need basis in relation to specific subject matters. DPO will assist in reviewing and clarifying the documents submitted by B/Ds as required in this document.</p>
+         </description>
+         <prop name="source-clause" value="section 5.1.1" />
+      </role>
+      <role id="itswg">
+         <title>IT Security Working Group</title>
+         <short-name>ITSWG</short-name>
+         <description>
+            <p>The IT Security Working Group (ITSWG) serves as the executive arm of the ISMC in the promulgation and compliance monitoring of government IT security related regulations, policies and guidelines. The ITSWG was established in May 2000, and its responsibilities are to:</p>
+            <ul>
+               <li>Co-ordinate activities aimed at providing guidance and assistance to B/Ds in the enforcement of IT security related regulations, policies and guidelines;</li>
+               <li>Monitor the compliance with the Baseline IT Security Policy at B/Ds;</li>
+               <li>Define and review the IT security related regulations, policies and guidelines; and</li>
+               <li>Promote IT security awareness within the Government.</li>
+            </ul>
+            <p>The core members of ITSWG comprise representatives from:</p>
+            <ul>
+               <li>Digital Policy Office (DPO)</li>
+               <li>Security Bureau (SB)</li>
+               <li>Hong Kong Police Force (HKPF)</li>
+               <li>Chief Secretary for Administration’s Office (CSO)</li>
+            </ul>
+            <p>Representative(s) from other B/Ds will be co-opted into the working group on a need basis, in relation to specific subject matters.</p>
+         </description>
+         <prop name="source-clause" value="section 5.1.2" />
+      </role>
+      <role id="giro">
+         <title>Government Information Security Incident Response Office</title>
+         <short-name>GIRO</short-name>
+         <description>
+            <p>To handle information security incidents occurring in B/Ds, an Information Security Incident Response Team (ISIRT) shall be established in each B/D. The Government Information Security Incident Response Office (GIRO) provides central co-ordination and support to the operation of individual ISIRTs of B/Ds. The GIRO Standing Office serves as the executive arm of GIRO.</p>
+            <p>The GIRO has the following major functions:</p>
+            <ul>
+               <li>Maintain a central inventory and oversee the handling of all information security incidents in the Government;</li>
+               <li>Prepare periodic statistics reports on government information security incidents;</li>
+               <li>Act as a central office to co-ordinate the handling of multiple-point security attacks (i.e. simultaneous attacks on different government information systems); and</li>
+               <li>Enable experience sharing and information exchange related to information security incident handling among ISIRTs of different B/Ds.</li>
+            </ul>
+            <p>The core members of GIRO comprise representatives from:</p>
+            <ul>
+               <li>Digital Policy Office (DPO)</li>
+               <li>Security Bureau (SB)</li>
+               <li>Hong Kong Police Force (HKPF)</li>
+            </ul>
+         </description>
+         <prop name="source-clause" value="section 5.1.3" />
+      </role>
+      <role id="govcert-hk">
+         <title>Government Computer Emergency Response Team Hong Kong</title>
+         <short-name>GovCERT.HK</short-name>
+         <description>
+            <p>The Government Computer Emergency Response Team Hong Kong (GovCERT.HK) was established in April 2015. In addition to collaborating with GIRO Standing Office in co-ordinating information and cyber security incidents within the Government, it also collaborates with the computer emergency response team community in sharing incident information and threat intelligence, and exchanging best practices to strengthen information and cyber security capabilities in the region. GovCERT.HK has the following major functions:</p>
+            <ul>
+               <li>Disseminate security alerts on impending and actual threats to B/Ds; and</li>
+               <li>Act as a bridge between the Hong Kong Computer Emergency Response Team Coordination Centre (HKCERT) and other computer security incident response teams (CSIRT) in handling cyber security incidents.</li>
+            </ul>
+         </description>
+         <prop name="source-clause" value="section 5.1.4" />
+      </role>
+      <role id="bureaux-departments">
+         <title>Bureaux/Departments</title>
+         <description>
+            <p>B/Ds shall be responsible for the security protection of their information assets and information systems. The roles and responsibilities of IT security staff within a B/D are detailed in Section 5.2 - Departmental IT Security Organisation.</p>
+            <p>5.2. Departmental IT Security Organisation</p>
+            <p>This section explains the individual roles and responsibilities of a departmental IT security organisation. In order to have sufficient segregation of duties, multiple roles should not be assigned to an individual unless there is a resource limitation.</p>
+            <p>The following diagram describes a sample departmental IT security management framework:</p>
+            <p>An Example Organisation Chart for Departmental IT Security Management 1</p>
+         </description>
+         <prop name="source-clause" value="section 5.1.5" />
+      </role>
+      <role id="ditso">
+         <title>Departmental IT Security Officer</title>
+         <short-name>DITSO</short-name>
+         <description>
+            <p>Head of B/D shall appoint an officer at D3 level or above from the senior management to be the Departmental IT Security Officer (DITSO) and responsible for IT security. As the senior management of the B/D, the DITSO shall participate in the overall steering of IT security matters of the B/D. The DITSO shall also understand the B/D’s priorities, the importance of the B/D’s information systems and data assets, and the level of security that shall be achieved.</p>
+            <p>If a B/D does not have a directorate officer at D3 level or above, the highest rank</p>
+            <p>directorate officer of the B/D shall assume the position of DITSO so as to uphold the principle of ensuring accountability in IT security.</p>
+            <p>SB and DPO will provide training to DITSOs to facilitate them in carrying out their duties and DITSOs shall attend the designated training. The roles and responsibilities of DITSO shall be clearly defined, which include but are not limited to the following:</p>
+            <ul>
+               <li>Establish and maintain an information protection program to assist all staff in the protection of the information and information systems they use;</li>
+               <li>Establish a proper security governance process to evaluate, direct, monitor and communicate the IT security related activities within the B/D;</li>
+               <li>Drive regular discussions on IT security issues at the senior management level to acquire adequate support and resources;</li>
+               <li>Lead in the establishment, maintenance and implementation of IT security policies, standards, procedures and guidelines;</li>
+               <li>Oversee, monitor, review and improve the effectiveness and efficiency of IT security management throughout every stage of IT operations;</li>
+               <li>Monitor and ensure compliance with the government IT security requirements, including overseeing the satisfactory completion of security audit exercises of the B/D;</li>
+               <li>Oversee the overall IT security awareness and training programmes within the B/D;</li>
+               <li>Co-ordinate with other B/Ds on IT security issues;</li>
+               <li>Oversee the overall IT risk management process within the B/D, including overseeing the satisfactory completion of information security risk assessments and privacy impact assessments as well as subsequent rectifications and responding to the evolving risk landscape, regulatory changes, technological advancements, and the system criticality;</li>
+               <li>Oversee the IT security threat detection and monitoring process and the threat intelligence activities of the B/D, including dissemination of security alerts on impending and actual threats from the GIRO to responsible parties within the B/D and relevant project teams; and</li>
+               <li>Initiate investigation and rectification in case of breach of security and co-ordinate the required submission of incident reports to the Director of Bureau.</li>
+            </ul>
+         </description>
+         <prop name="source-clause" value="section 5.2.1" />
+      </role>
+      <role id="information-security-steering-committee">
+         <title>Information Security Steering Committee</title>
+         <description>
+            <p>The senior management of B/Ds shall have an appreciation of IT security, its problems and resolutions. Senior management should consider setting up of an information security steering committee which reports to DITSO, or including information security as one of the regular discussion items in management meetings. The responsibilities of the committee include:</p>
+            <ul>
+               <li>Demonstrate leadership in promoting and prioritising IT security within the B/D;</li>
+               <li>Direct and enforce the development of security measures;</li>
+               <li>Provide the necessary resources required for the measures to be implemented;</li>
+               <li>Foster the proper, orderly and secure functioning of all information systems of the B/D;</li>
+               <li>Ensure participation and accountability at all levels of management, administrative, technical and operational staff, and provide full support to them;</li>
+               <li>Foster a culture of security awareness and accountability throughout the B/D; and</li>
+               <li>Ensure B/D’s IT security strategies align with the business objectives.</li>
+            </ul>
+            <p>If B/Ds choose not to set up an information security steering committee, DITSO should undertake the responsibilities of the committee.</p>
+         </description>
+         <prop name="source-clause" value="section 5.2.2" />
+      </role>
+      <role id="dso">
+         <title>Departmental Security Officer</title>
+         <short-name>DSO</short-name>
+         <description>
+            <p>The Head of B/D will designate a Departmental Security Officer (DSO) to perform the departmental security related duties. The DSO will take the role of an executive to:</p>
+            <ul>
+               <li>Discharge responsibilities for all aspects of security for the B/D; and</li>
+               <li>Advise on the set up and review of the security policy.</li>
+            </ul>
+            <p>The DSO may take on the role of the DITSO. Alternatively, in those B/Ds where someone else is appointed, the DITSO shall collaborate with the DSO to oversee the IT security of the B/D.</p>
+         </description>
+         <prop name="source-clause" value="section 5.2.3" />
+      </role>
+      <role id="isirt-commander">
+         <title>Departmental Information Security Incident Response Team (ISIRT) Commander</title>
+         <short-name>ISIRT</short-name>
+         <description>
+            <p>The ISIRT is the central focal point for co-ordinating the handling of information security incidents occurring within the respective B/D. The Head of B/D should designate an officer from the senior management to be the ISIRT Commander. The ISIRT Commander should have the authority to appoint core team members for the ISIRT. The responsibilities of an ISIRT Commander include:</p>
+            <ul>
+               <li>Provide overall supervision and co-ordination of information security incident handling for all information systems within the B/D;</li>
+               <li>Make decisions on critical matters such as damage containment, system recovery, the engagement of external parties and the extent of involvement, and service resumption logistics after recovery;</li>
+               <li>Trigger the departmental disaster recovery procedure where appropriate, depending on the impact of the incident on the business operation of the B/D;</li>
+               <li>Provide management endorsement on the provision of resources for the incident handling process;</li>
+               <li>Provide management endorsement in respect of the line-to-take for publicity on the incident;</li>
+               <li>Collaborate with GIRO in reporting information security incidents for central</li>
+            </ul>
+            <p>recording and necessary follow-up actions; and</p>
+            <ul>
+               <li>Facilitate experience and information sharing within the B/D on information security incident handling and related matters.</li>
+            </ul>
+         </description>
+         <prop name="source-clause" value="section 5.2.4" />
+      </role>
+      <role id="it-security-management-unit">
+         <title>IT Security Management Unit</title>
+         <description>
+            <p>B/Ds shall establish an IT security management unit which reports to DITSO and assists DITSO in discharging his/her duties. The size and composition of the unit may vary among B/Ds depending on the business and operational needs of B/Ds. The responsibilities of the IT security management unit include:</p>
+            <ul>
+               <li>Assist DITSO in overseeing the security governance process for the IT security related activities within the B/D;</li>
+               <li>Assist DITSO in the IT security management process for all IT operations of the B/D;</li>
+               <li>Assist DITSO in developing, establishing, and maintaining the overall IT security strategy and roadmap for the B/D, including formulating IT security policies, baselines, standards, directives, etc.;</li>
+               <li>Co-ordinate security awareness and training programmes within the B/D;</li>
+               <li>Co-ordinate the implementation of IT security initiatives and monitor the status of IT security processes to ensure the effectiveness of IT security management and compliance with government security requirements;</li>
+               <li>Facilitate IT security threat and risk management activities and support disaster recovery and business continuity planning functions relating to IT security;</li>
+               <li>Co-ordinate security incident investigation and rectification;</li>
+               <li>Liaise with other B/Ds and parties on IT security matters; and</li>
+               <li>Perform any other duties as directed by the DITSO.</li>
+            </ul>
+            <p>5.3. Other Roles</p>
+         </description>
+         <prop name="source-clause" value="section 5.2.5" />
+      </role>
+      <role id="it-security-administrators">
+         <title>IT Security Administrators</title>
+         <description>
+            <p>IT Security Administrators shall be responsible for providing security and risk management related support services. His/her responsibilities also include:</p>
+            <ul>
+               <li>Assist in identifying and mitigating system vulnerabilities;</li>
+               <li>Assist in the patch management process;</li>
+               <li>Conduct security administrative tasks, such as implementing access controls and managing user privileges;</li>
+               <li>Maintain and review audit logs;</li>
+               <li>Monitor threat intelligence sources and stay updated on emerging security threats; and</li>
+               <li>Operate and maintain security tools and systems, such as intrusion detection and prevention systems.</li>
+            </ul>
+            <p>The IT Security Administrator should not be the same person as the System Administrator. There should be a segregation of duties between the IT Security Administrator and the System Administrator.</p>
+            <p>Although the IT Security Administrators are responsible for managing the audit logs, they should not tamper with or change any audit log.</p>
+            <p>B/Ds may appoint an IT Security Auditor, who will be responsible for auditing the work of the IT Security Administrators to ensure that they perform their duties due diligently.</p>
+         </description>
+         <prop name="source-clause" value="section 5.3.1" />
+      </role>
+      <role id="information-owners">
+         <title>Information Owners</title>
+         <description>
+            <p>Information Owners shall be the collators and the owners of information stored in information systems. Their primary responsibility is to:</p>
+            <ul>
+               <li>Determine the data classifications, the authorised data usage, and the corresponding security requirements for protection of the information.</li>
+            </ul>
+         </description>
+         <prop name="source-clause" value="section 5.3.2" />
+      </role>
+      <role id="lan-system-administrators">
+         <title>LAN/System Administrators</title>
+         <description>
+            <p>LAN/System Administrators shall be responsible for the day-to-day administration, operation and configuration of the computer systems and network in B/Ds, whereas Internet System Administrators are responsible for the related tasks for their Internet-facing information systems. Their responsibilities include:</p>
+            <ul>
+               <li>Implement the security mechanisms and controls in accordance with procedures/guidelines established by the DITSO.</li>
+            </ul>
+         </description>
+         <prop name="source-clause" value="section 5.3.3" />
+      </role>
+      <role id="application-development-maintenance-team">
+         <title>Application Development &amp; Maintenance Team</title>
+         <description>
+            <p>The Application Development &amp; Maintenance Team shall be responsible for producing quality systems with the use of quality procedures, techniques and tools. Their responsibilities include:</p>
+            <ul>
+               <li>Liaise with the Information Owner in order to define and implement system security requirements during the development and maintenance of applications; and</li>
+               <li>Ensure quality procedures, techniques, and tools are used to produce secure systems.</li>
+            </ul>
+         </description>
+         <prop name="source-clause" value="section 5.3.4" />
+      </role>
+      <role id="users">
+         <title>Users</title>
+         <description>
+            <p>Users of information systems shall be the staff authorised to access and use the information. Users shall be accountable for all their activities. Responsibilities of a user include:</p>
+            <ul>
+               <li>Attend security awareness and training programmes directed by the B/D;</li>
+               <li>Know, understand, follow and apply all the possible and available security mechanisms to the maximum extent possible;</li>
+               <li>Prevent leakage and unauthorised access to information under his/her custody; and</li>
+               <li>Safekeep computing and storage devices, and protect them from unauthorised access or malicious attack with his/her best effort.</li>
+            </ul>
+         </description>
+         <prop name="source-clause" value="section 5.3.5" />
+      </role>
+      <role id="publisher">
+         <title>Publisher of this document</title>
+         <prop name="source-clause" value="section 21" />
+      </role>
+      <party uuid="b277d0e2-2997-5601-a582-4b11d6e1bbe7" type="organization">
+         <name>Digital Policy Office</name>
+         <short-name>DPO</short-name>
+         <email-address>it_security@digitalpolicy.gov.hk</email-address>
+         <remarks>
+            <p>The Government of the Hong Kong Special Administrative Region of the People's Republic of China. Contact details are as published in section 21 of the source document.</p>
+         </remarks>
+      </party>
+      <responsible-party role-id="publisher">
+         <party-uuid>b277d0e2-2997-5601-a582-4b11d6e1bbe7</party-uuid>
+      </responsible-party>
+      <remarks>
+         <p>Unofficial OSCAL rendering of the Baseline IT Security Policy [S17] version 8.2, published by the Digital Policy Office of the Government of the Hong Kong Special Administrative Region. Controls are the numbered policy statements of sections 7 to 20 — the fourteen mandatory security areas listed in section 2.1 — one control per statement, grouped by section and subsection. Control titles are editorial: the source document numbers its statements and does not name them; every control carries a <code>title-source</code> prop recording whether its title came from the conversion's reviewed title map or from an automatic derivation. Sections 5.1 to 5.3 supply metadata.roles; section 3 and section 2.3 supply back-matter resources; section 4.1 supplies the definitions group. This is not an official publication and is not endorsed by the Digital Policy Office.</p>
+      </remarks>
+   </metadata>
+   <group id="s17-definitions" class="front-matter">
+      <title>Definitions</title>
+      <prop name="label" value="4.1." />
+      <part id="s17-definitions_ovw" name="overview">
+         <p>Terms as defined in section 4.1 of the source document. This group carries no controls; it exists so that consumers of the catalog have the document's own vocabulary alongside its requirements.</p>
+      </part>
+      <part id="s17-definitions_a" name="definition">
+         <title>Tier 1 Information Systems</title>
+         <p>A related set of hardware and software organised for the collection, processing, storage, communication, or disposition of information, regardless of the source of funding and project type.</p>
+      </part>
+      <part id="s17-definitions_b" name="definition">
+         <title>Tier 2 Information Systems</title>
+         <p>Tier 1 information systems which are crucial to the operations of the Government or society and whose failure or disruption will result in a serious impact on government operations or may cause public turmoil and catastrophes.</p>
+      </part>
+      <part id="s17-definitions_c" name="definition">
+         <title>Essential Services</title>
+         <p>Services that are critical to the functioning and security of a society and its economy.</p>
+      </part>
+      <part id="s17-definitions_d" name="definition">
+         <title>Tier 3 Information Systems</title>
+         <p>Tier 2 information systems which are directly related to the provision of essential service concerned and whose disruption or destruction may cause serious harm to the economy, people’s livelihood, public safety, etc.</p>
+      </part>
+      <part id="s17-definitions_e" name="definition">
+         <title>Confidentiality</title>
+         <p>Only authorised persons and information systems are allowed to know or gain access to the information stored or processed by information systems in any aspect.</p>
+      </part>
+      <part id="s17-definitions_f" name="definition">
+         <title>Integrity</title>
+         <p>Only authorised persons and information systems are allowed to make changes to the information stored or processed by information systems in any aspect.</p>
+      </part>
+      <part id="s17-definitions_g" name="definition">
+         <title>Availability</title>
+         <p>Information System is accessible and usable upon demand by authorised persons and information systems.</p>
+      </part>
+      <part id="s17-definitions_h" name="definition">
+         <title>IT Security Policy</title>
+         <p>A documented list of management instructions that describes in detail the proper use and management of computer and network resources with the objective of protecting these resources, as well as the information stored or processed by information systems, from any unauthorised disclosure, modifications or destruction.</p>
+      </part>
+      <part id="s17-definitions_i" name="definition">
+         <title>Classified Information</title>
+         <p>Refers to the categories of information classified in accordance with the Security Regulations.</p>
+      </part>
+      <part id="s17-definitions_j" name="definition">
+         <title>Staff</title>
+         <p>A collective term used to describe all personnel employed or whose service is acquired to work for the Government, including all public officers irrespective of the employment period and terms, non-government secondees engaged through employment agencies, and other term contract services personnel, etc., who may have different accessibility to classified information and are subject to different security vetting requirements. Specific requirements governing human resource security are found in Section 9 of S17.</p>
+      </part>
+      <part id="s17-definitions_k" name="definition">
+         <title>Data Centre</title>
+         <p>A centralised data processing facility that houses information systems and related equipment.</p>
+      </part>
+      <part id="s17-definitions_l" name="definition">
+         <title>Computer Room</title>
+         <p>A dedicated room for housing computer equipment.</p>
+      </part>
+      <part id="s17-definitions_m" name="definition">
+         <title>Malware</title>
+         <p>Programs intended to perform an unauthorised process that will have an adverse impact on the confidentiality, integrity, or availability of an information system. Examples of malware include computer viruses, worms, Trojan horses, and spyware.</p>
+      </part>
+      <part id="s17-definitions_n" name="definition">
+         <title>Mobile Devices</title>
+         <p>Portable computing and communication devices with information storage and processing capability. Examples include portable computers, mobile phones, tablets, digital cameras, and audio or video recording devices.</p>
+      </part>
+      <part id="s17-definitions_o" name="definition">
+         <title>Removable Media</title>
+         <p>Portable electronic storage media such as magnetic, optical, and flash memory devices, which can be inserted into and removed from a computing device. Examples include external hard drives or solid-state drives, floppy disks, zip drives, optical disks, tapes, memory cards, flash drives, and similar USB storage devices.</p>
+      </part>
+      <part id="s17-definitions_p" name="definition">
+         <title>Internet of Things (IoT) Devices</title>
+         <p>Devices that have network connectivity and computing capabilities, which function autonomously to interact with the physical environment by ways of sensing or actuation.</p>
+      </part>
+   </group>
+   <group id="s17-7" class="security-area">
+      <title>Management Responsibilities</title>
+      <prop name="label" value="7." />
+      <part id="s17-7_ovw" name="overview">
+         <p>Head of B/Ds shall put in place effective security arrangements to ensure information systems and data assets of the Government are safeguarded, and IT services are delivered securely.</p>
+      </part>
+      <group id="s17-7.1" class="topic">
+         <title>General Management</title>
+         <prop name="label" value="7.1." />
+         <control id="s17-7.1.1" class="policy-statement">
+            <title>Departmental IT security organisational framework</title>
+            <prop name="label" value="7.1.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-7.1.1_smt" name="statement">
+               <p>B/Ds shall define their departmental IT security organisational framework and the associated roles and responsibilities.</p>
+            </part>
+         </control>
+         <control id="s17-7.1.2" class="policy-statement">
+            <title>Responsive and adaptive security protection</title>
+            <prop name="label" value="7.1.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-7.1.2_smt" name="statement">
+               <p>B/Ds shall ensure that security protection is responsive and adaptive to changing environments and technology.</p>
+            </part>
+         </control>
+         <control id="s17-7.1.3" class="policy-statement">
+            <title>Segregation of security duties</title>
+            <prop name="label" value="7.1.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-7.1.3_smt" name="statement">
+               <p>B/Ds shall apply sufficient segregation of duties to avoid the execution of all security functions of an information system by a single individual.</p>
+            </part>
+         </control>
+         <control id="s17-7.1.4" class="policy-statement">
+            <title>Budget provision for security safeguards</title>
+            <prop name="label" value="7.1.4." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-7.1.4_smt" name="statement">
+               <p>B/Ds shall ensure that the provision for necessary security safeguards and resources are covered in their budgets.</p>
+            </part>
+         </control>
+         <control id="s17-7.1.5" class="policy-statement">
+            <title>Right to examine government-held information</title>
+            <prop name="label" value="7.1.5." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <link href="#61da519c-33af-5e87-b582-aa1c5cef5db9" rel="reference" />
+            <part id="s17-7.1.5_smt" name="statement">
+               <p>B/Ds shall reserve the right to examine all information stored in or transmitted by government information systems in compliance with the Personal Data (Privacy) Ordinance.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-7.2" class="topic">
+         <title>Security Risk Management</title>
+         <prop name="label" value="7.2." />
+         <control id="s17-7.2.1" class="policy-statement">
+            <title>Risk-based approach to information security</title>
+            <prop name="label" value="7.2.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-7.2.1_smt" name="statement">
+               <p>B/Ds shall adopt a risk-based approach to information security to ensure the confidentiality, integrity and availability of information assets and all other security aspects of information systems under their control, including outsourced systems, and monitor compliance with the security policies, guidelines, etc., by their staff and contractors.</p>
+            </part>
+         </control>
+         <control id="s17-7.2.2" class="policy-statement">
+            <title>Classified protection and system classification</title>
+            <prop name="label" value="7.2.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-7.2.2_smt" name="statement">
+               <p>B/Ds shall adopt classified protection of IT security by assessing the classifications of all their information systems, including infrastructure facilities and departmental shared IT services, regardless of the source of their funding and implementing tiered security controls according to the system classifications. The assessment details of system classification of all information systems shall be properly documented. The information system classifications shall be endorsed by the Heads of B/Ds or their explicitly delegated officer at directorate level.</p>
+            </part>
+         </control>
+      </group>
+   </group>
+   <group id="s17-8" class="security-area">
+      <title>IT Security Policies</title>
+      <prop name="label" value="8." />
+      <part id="s17-8_ovw" name="overview">
+         <p>B/Ds shall define and enforce their IT security policies to provide management direction and support for protecting information systems and assets in accordance with the business needs and security requirements.</p>
+      </part>
+      <group id="s17-8.1" class="topic">
+         <title>Management Direction for IT Security</title>
+         <prop name="label" value="8.1." />
+         <control id="s17-8.1.1" class="policy-statement">
+            <title>Departmental IT security policy</title>
+            <prop name="label" value="8.1.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-8.1.1_smt" name="statement">
+               <p>B/Ds shall promulgate and enforce their own IT Security Policy. They shall use the Baseline IT Security Policy document as a basis for their policy development.</p>
+            </part>
+         </control>
+         <control id="s17-8.1.2" class="policy-statement">
+            <title>Periodic review of security policies and procedures</title>
+            <prop name="label" value="8.1.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-8.1.2_smt" name="statement">
+               <p>B/Ds shall conduct a review of their information security policies, standards, procedures and guidelines periodically.</p>
+            </part>
+         </control>
+         <control id="s17-8.1.3" class="policy-statement">
+            <title>Acceptable use policy for IT services and facilities</title>
+            <prop name="label" value="8.1.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-8.1.3_smt" name="statement">
+               <p>B/Ds shall clearly define and communicate to users its policy in relation to acceptable use of IT services and facilities.</p>
+            </part>
+         </control>
+      </group>
+   </group>
+   <group id="s17-9" class="security-area">
+      <title>Human Resource Security</title>
+      <prop name="label" value="9." />
+      <part id="s17-9_ovw" name="overview">
+         <p>B/Ds shall ensure that staff who are engaged in government work are suitable for the roles, understand their responsibilities and are aware of information security risks. B/Ds shall protect the government interests in the process of new, changing or terminating employment.</p>
+      </part>
+      <group id="s17-9.1" class="topic">
+         <title>New, During or Termination of Employment</title>
+         <prop name="label" value="9.1." />
+         <control id="s17-9.1.1" class="policy-statement">
+            <title>Notification of IT security responsibilities</title>
+            <prop name="label" value="9.1.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-9.1.1_smt" name="statement">
+               <p>B/Ds shall advise all staff of their IT security responsibilities upon being assigned a new post and periodically throughout their term of employment.</p>
+            </part>
+         </control>
+         <control id="s17-9.1.2" class="policy-statement">
+            <title>Security awareness training</title>
+            <prop name="label" value="9.1.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-9.1.2_smt" name="statement">
+               <p>Information security is the responsibility of every member of the staff in the Government. Staff shall receive appropriate awareness training and regular updates on the IT Security Policy.</p>
+            </part>
+         </control>
+         <control id="s17-9.1.3" class="policy-statement">
+            <title>Periodic staff education and training</title>
+            <prop name="label" value="9.1.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-9.1.3_smt" name="statement">
+               <p>Staff shall be educated and trained periodically in order to enable them to discharge their responsibilities and perform their duties relating to IT security.</p>
+            </part>
+         </control>
+         <control id="s17-9.1.4" class="policy-statement">
+            <title>Integrity checks and background verification</title>
+            <prop name="label" value="9.1.4." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <prop name="advisory-clauses" value="should" />
+            <part id="s17-9.1.4_smt" name="statement">
+               <p>Civil servants authorised to access classified information higher than RESTRICTED shall undergo an integrity check as stipulated by the Secretary for the Civil Service. For staff other than civil servants, appropriate background verification checks should be carried out commensurate with the business requirements, the classification of the information that the staff will handle, and the perceived risks.</p>
+            </part>
+         </control>
+         <control id="s17-9.1.5" class="policy-statement">
+            <title>Disciplinary provisions for civil servants</title>
+            <prop name="label" value="9.1.5." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <prop name="advisory-clauses" value="may" />
+            <link href="#21771954-751c-5223-9d05-b0962796bbc2" rel="reference" />
+            <part id="s17-9.1.5_smt" name="statement">
+               <p>B/Ds shall include in their IT Security Policy a provision advising civil servants that if they contravene any provision of the Policy, they may be subjected to disciplinary action as stipulated in the Civil Service Regulations and that different levels of disciplinary action may be instigated depending on the severity of the breach.</p>
+            </part>
+         </control>
+         <control id="s17-9.1.6" class="policy-statement">
+            <title>Penalty provisions for non-civil-service staff</title>
+            <prop name="label" value="9.1.6." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <prop name="advisory-clauses" value="may" />
+            <part id="s17-9.1.6_smt" name="statement">
+               <p>B/Ds shall include in their IT Security Policy a provision advising all staff other than civil servants which shall be covered in 9.1.5 above, that if they contravene any provision of the Policy, they may be subject to relevant penalty action according to their respective terms of employment, including but not limited to termination of their services to the Government, depending on the severity of the breach.</p>
+            </part>
+         </control>
+         <control id="s17-9.1.7" class="policy-statement">
+            <title>Selection and authorisation of staff with system access</title>
+            <prop name="label" value="9.1.7." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-9.1.7_smt" name="statement">
+               <p>Staff who use or have unescorted access to information systems and resources shall be carefully selected and they shall be made aware of their own responsibilities and duties. They shall be formally notified of their authorisation to access information systems.</p>
+            </part>
+         </control>
+         <control id="s17-9.1.8" class="policy-statement">
+            <title>Disclosure of classified information and the need-to-know principle</title>
+            <prop name="label" value="9.1.8." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <prop name="advisory-clauses" value="should" />
+            <part id="s17-9.1.8_smt" name="statement">
+               <p>No staff shall publish, make private copies of or communicate to unauthorised persons any classified document or information obtained in his official capacity, unless he is required to do so in the interest of the Government. The "need to know" principle shall be applied to all classified information, which should be provided only to persons who require it for the efficient discharge of their work and who have authorised access. If in any doubt as to whether an officer has authorised access to a particular document or classification or information, the Departmental Security Officer should be consulted.</p>
+            </part>
+         </control>
+         <control id="s17-9.1.9" class="policy-statement">
+            <title>Responsibilities surviving termination or change of employment</title>
+            <prop name="label" value="9.1.9." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-9.1.9_smt" name="statement">
+               <p>Information security responsibilities and duties that remain valid after termination or change of employment shall be defined, communicated to the staff and enforced.</p>
+            </part>
+         </control>
+      </group>
+   </group>
+   <group id="s17-10" class="security-area">
+      <title>Asset Management</title>
+      <prop name="label" value="10." />
+      <part id="s17-10_ovw" name="overview">
+         <p>B/Ds shall maintain appropriate protection of all hardware, software and information assets and ensure all information systems and assets receive an appropriate level of protection.</p>
+      </part>
+      <group id="s17-10.1" class="topic">
+         <title>Responsibility for Assets</title>
+         <prop name="label" value="10.1." />
+         <control id="s17-10.1.1" class="policy-statement">
+            <title>Inventory of systems, assets, warranties and agreements</title>
+            <prop name="label" value="10.1.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-10.1.1_smt" name="statement">
+               <p>B/Ds shall ensure that an inventory of information systems, hardware assets, software assets, valid warranties, service agreements and legal/contractual documents are properly owned, kept and maintained.</p>
+            </part>
+         </control>
+         <control id="s17-10.1.2" class="policy-statement">
+            <title>Disclosure of information about information systems</title>
+            <prop name="label" value="10.1.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <prop name="advisory-clauses" value="may" />
+            <part id="s17-10.1.2_smt" name="statement">
+               <p>Information about information systems shall not be disclosed where that information may compromise the security of those systems, except on a need-to-know basis and only if authorised by the DITSO.</p>
+            </part>
+         </control>
+         <control id="s17-10.1.3" class="policy-statement">
+            <title>Disclosure of system location and controls by staff</title>
+            <prop name="label" value="10.1.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-10.1.3_smt" name="statement">
+               <p>Staff shall not disclose to any unauthorised persons the nature and location of the information systems and the information system controls that are in use or the way in which they are implemented.</p>
+            </part>
+         </control>
+         <control id="s17-10.1.4" class="policy-statement">
+            <title>Handover and return of resources on departure</title>
+            <prop name="label" value="10.1.4." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-10.1.4_smt" name="statement">
+               <p>At the time that a member of the staff is transferred or ceases to provide services to the Government, the outgoing officer or staff of external parties shall handover and return computer resources and information to the Government.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-10.2" class="topic">
+         <title>Information Classification</title>
+         <prop name="label" value="10.2." />
+         <control id="s17-10.2.1" class="policy-statement">
+            <title>Information classification, labelling and handling</title>
+            <prop name="label" value="10.2.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-10.2.1_smt" name="statement">
+               <p>B/Ds shall comply with the government security requirements in relation to the information classification, labelling and handling.</p>
+            </part>
+         </control>
+         <control id="s17-10.2.2" class="policy-statement">
+            <title>Encryption of classified information in storage</title>
+            <prop name="label" value="10.2.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-10.2.2_smt" name="statement">
+               <p>All classified information shall be encrypted in storage irrespective of the storage media.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-10.3" class="topic">
+         <title>Storage Media Handling</title>
+         <prop name="label" value="10.3." />
+         <control id="s17-10.3.1" class="policy-statement">
+            <title>Use and transportation of storage media</title>
+            <prop name="label" value="10.3.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-10.3.1_smt" name="statement">
+               <p>B/Ds shall manage the use and transportation of storage media containing classified information.</p>
+            </part>
+         </control>
+         <control id="s17-10.3.2" class="policy-statement">
+            <title>Protection of storage media holding classified information</title>
+            <prop name="label" value="10.3.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-10.3.2_smt" name="statement">
+               <p>Storage media with classified information shall be protected against unauthorised access, misuse or physical damage.</p>
+            </part>
+         </control>
+         <control id="s17-10.3.3" class="policy-statement">
+            <title>Clearing of storage media before disposal or re-use</title>
+            <prop name="label" value="10.3.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-10.3.3_smt" name="statement">
+               <p>All classified information shall be completely cleared or destroyed from storage media before disposal or re-use.</p>
+            </part>
+         </control>
+      </group>
+   </group>
+   <group id="s17-11" class="security-area">
+      <title>Access Control</title>
+      <prop name="label" value="11." />
+      <part id="s17-11_ovw" name="overview">
+         <p>B/Ds shall prevent unauthorised user access and compromise of information systems and assets and allow only authorised computer resources to connect to the government internal network.</p>
+      </part>
+      <group id="s17-11.1" class="topic">
+         <title>Business Requirements of Access Control</title>
+         <prop name="label" value="11.1." />
+         <control id="s17-11.1.1" class="policy-statement">
+            <title>Least privilege in assigning resources and privileges</title>
+            <prop name="label" value="11.1.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-11.1.1_smt" name="statement">
+               <p>B/Ds shall enforce the least privilege principle when assigning resources and privileges of information systems to users.</p>
+            </part>
+         </control>
+         <control id="s17-11.1.2" class="policy-statement">
+            <title>Authorisation of access by information owners</title>
+            <prop name="label" value="11.1.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-11.1.2_smt" name="statement">
+               <p>Access to information shall not be allowed unless authorised by the relevant information owners.</p>
+            </part>
+         </control>
+         <control id="s17-11.1.3" class="policy-statement">
+            <title>Logical access control over classified information</title>
+            <prop name="label" value="11.1.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-11.1.3_smt" name="statement">
+               <p>Access to information systems containing classified information shall be restricted by means of logical access control.</p>
+            </part>
+         </control>
+         <control id="s17-11.1.4" class="policy-statement">
+            <title>Authentication before access to classified information</title>
+            <prop name="label" value="11.1.4." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-11.1.4_smt" name="statement">
+               <p>Access to classified information without appropriate authentication shall not be allowed.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-11.2" class="topic">
+         <title>User Access Management</title>
+         <prop name="label" value="11.2." />
+         <control id="s17-11.2.1" class="policy-statement">
+            <title>Documented user access procedures</title>
+            <prop name="label" value="11.2.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-11.2.1_smt" name="statement">
+               <p>Procedures for approving, granting and managing user access, including user registration/de-registration, password delivery and password reset, shall be documented.</p>
+            </part>
+         </control>
+         <control id="s17-11.2.2" class="policy-statement">
+            <title>Need-to-know basis for data access rights</title>
+            <prop name="label" value="11.2.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-11.2.2_smt" name="statement">
+               <p>Data access rights shall be granted to users based on a need-to-know basis.</p>
+            </part>
+         </control>
+         <control id="s17-11.2.3" class="policy-statement">
+            <title>Restriction and control of special privileges</title>
+            <prop name="label" value="11.2.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-11.2.3_smt" name="statement">
+               <p>The use of special privileges shall be restricted and controlled.</p>
+            </part>
+         </control>
+         <control id="s17-11.2.4" class="policy-statement">
+            <title>Definition and periodic review of access rights</title>
+            <prop name="label" value="11.2.4." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-11.2.4_smt" name="statement">
+               <p>User privileges and data access rights shall be clearly defined and reviewed periodically. The review frequency shall be defined and documented. Records for access rights approval and review shall be maintained.</p>
+            </part>
+         </control>
+         <control id="s17-11.2.5" class="policy-statement">
+            <title>Revocation of dormant and unneeded access rights</title>
+            <prop name="label" value="11.2.5." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-11.2.5_smt" name="statement">
+               <p>All user privileges and data access rights shall be revoked after a pre-defined period of inactivity or when no longer required. The period of inactivity and the corresponding review frequency shall be defined and documented.</p>
+            </part>
+         </control>
+         <control id="s17-11.2.6" class="policy-statement">
+            <title>Unique user identities and shared user-IDs</title>
+            <prop name="label" value="11.2.6." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-11.2.6_smt" name="statement">
+               <p>Each user identity (user-ID) shall uniquely identify only one user. Shared or group user-IDs shall not be permitted unless explicitly approved by the DITSO.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-11.3" class="topic">
+         <title>User Responsibilities</title>
+         <prop name="label" value="11.3." />
+         <control id="s17-11.3.1" class="policy-statement">
+            <title>User accountability for user-ID activity</title>
+            <prop name="label" value="11.3.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-11.3.1_smt" name="statement">
+               <p>Users shall be responsible for all activities performed with their user-IDs.</p>
+            </part>
+         </control>
+         <control id="s17-11.3.2" class="policy-statement">
+            <title>Password sharing and disclosure</title>
+            <prop name="label" value="11.3.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <prop name="advisory-clauses" value="should" />
+            <part id="s17-11.3.2_smt" name="statement">
+               <p>Passwords shall not be shared or divulged unless necessary (e.g., helpdesk assistance, shared PC and shared files). If passwords must be shared, explicit approval from the DITSO shall be obtained. Besides, the shared passwords should be changed promptly when the need no longer exists and should be changed frequently if sharing is required on a regular basis.</p>
+            </part>
+         </control>
+         <control id="s17-11.3.3" class="policy-statement">
+            <title>Protection of passwords in storage and transmission</title>
+            <prop name="label" value="11.3.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-11.3.3_smt" name="statement">
+               <p>Passwords shall always be well protected when held in storage. Passwords shall be encrypted when transmitted over an un-trusted communication network. Compensating controls shall be applied to reduce the risk exposure to an acceptable level if encryption is not implementable.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-11.4" class="topic">
+         <title>System and Application Access Control</title>
+         <prop name="label" value="11.4." />
+         <control id="s17-11.4.1" class="policy-statement">
+            <title>Authentication commensurate with information sensitivity</title>
+            <prop name="label" value="11.4.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-11.4.1_smt" name="statement">
+               <p>Authentication shall be performed in a manner commensurate with the sensitivity of the information to be accessed.</p>
+            </part>
+         </control>
+         <control id="s17-11.4.2" class="policy-statement">
+            <title>Control of consecutive unsuccessful log-in attempts</title>
+            <prop name="label" value="11.4.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-11.4.2_smt" name="statement">
+               <p>Consecutive unsuccessful log-in trials shall be controlled.</p>
+            </part>
+         </control>
+         <control id="s17-11.4.3" class="policy-statement">
+            <title>Departmental password policy</title>
+            <prop name="label" value="11.4.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-11.4.3_smt" name="statement">
+               <p>B/Ds shall define a strict password policy that details at least minimum password length, initial assignment, restricted words and format, and password life cycle, and include guidelines on suitable systems and user password selection.</p>
+            </part>
+         </control>
+         <control id="s17-11.4.4" class="policy-statement">
+            <title>Prohibition on capturing passwords and access mechanisms</title>
+            <prop name="label" value="11.4.4." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="unqualified" />
+            <part id="s17-11.4.4_smt" name="statement">
+               <p>Staff are prohibited from capturing or otherwise obtaining passwords, decryption keys, or any other access control mechanism which could permit unauthorised access.</p>
+            </part>
+         </control>
+         <control id="s17-11.4.5" class="policy-statement">
+            <title>Change of vendor-supplied default passwords</title>
+            <prop name="label" value="11.4.5." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-11.4.5_smt" name="statement">
+               <p>All vendor-supplied default passwords shall be changed before any information system is put into operation.</p>
+            </part>
+         </control>
+         <control id="s17-11.4.6" class="policy-statement">
+            <title>Change of compromised or disclosed passwords</title>
+            <prop name="label" value="11.4.6." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-11.4.6_smt" name="statement">
+               <p>All passwords shall be promptly changed if they are suspected of/are being compromised or disclosed to vendors for maintenance and support.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-11.5" class="topic">
+         <title>Mobile Computing and Remote Access</title>
+         <prop name="label" value="11.5." />
+         <control id="s17-11.5.1" class="policy-statement">
+            <title>Usage policy for mobile computing and remote access</title>
+            <prop name="label" value="11.5.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <prop name="advisory-clauses" value="should" />
+            <part id="s17-11.5.1_smt" name="statement">
+               <p>B/Ds shall define appropriate usage policies and procedures specifying the security requirements when using mobile computing and remote access. Appropriate security measures shall be adopted to avoid unauthorised access to or disclosure of the information stored and processed by these facilities. Authorised users should be briefed on the security threats and accept their security responsibilities with explicit acknowledgement.</p>
+            </part>
+         </control>
+         <control id="s17-11.5.2" class="policy-statement">
+            <title>Prevention of unauthorised remote access</title>
+            <prop name="label" value="11.5.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-11.5.2_smt" name="statement">
+               <p>Security measures shall be in place to prevent unauthorised remote access to government information systems and data.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-11.6" class="topic">
+         <title>IoT Devices</title>
+         <prop name="label" value="11.6." />
+         <control id="s17-11.6.1" class="policy-statement">
+            <title>Security measures for IoT devices</title>
+            <prop name="label" value="11.6.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-11.6.1_smt" name="statement">
+               <p>B/Ds shall define and implement proper security measures to ensure the security of IoT devices and data is commensurate with the classification of the information.</p>
+            </part>
+         </control>
+         <control id="s17-11.6.2" class="policy-statement">
+            <title>Application of mobile device requirements to IoT devices</title>
+            <prop name="label" value="11.6.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-11.6.2_smt" name="statement">
+               <p>The security requirements for mobile devices laid out in this document shall be followed similarly for IoT devices unless it is not technically feasible for implementation. Classified information shall not be stored or processed in privately-owned IoT devices.</p>
+            </part>
+         </control>
+      </group>
+   </group>
+   <group id="s17-12" class="security-area">
+      <title>Cryptography</title>
+      <prop name="label" value="12." />
+      <part id="s17-12_ovw" name="overview">
+         <p>B/Ds shall ensure proper and effective use of cryptography to protect the confidentiality, authenticity and integrity of information.</p>
+      </part>
+      <group id="s17-12.1" class="topic">
+         <title>Cryptographic Controls</title>
+         <prop name="label" value="12.1." />
+         <control id="s17-12.1.1" class="policy-statement">
+            <title>Cryptographic key life cycle management</title>
+            <prop name="label" value="12.1.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-12.1.1_smt" name="statement">
+               <p>B/Ds shall manage cryptographic keys through their whole life cycle, including generating, storing, archiving, retrieving, distributing, retiring and destroying keys.</p>
+            </part>
+         </control>
+      </group>
+   </group>
+   <group id="s17-13" class="security-area">
+      <title>Physical and Environmental Security</title>
+      <prop name="label" value="13." />
+      <part id="s17-13_ovw" name="overview">
+         <p>B/Ds shall prevent unauthorised physical access, damage, theft or compromise of assets, and interruption to the office premises and information systems.</p>
+      </part>
+      <group id="s17-13.1" class="topic">
+         <title>Secure Areas</title>
+         <prop name="label" value="13.1." />
+         <control id="s17-13.1.1" class="policy-statement">
+            <title>Site selection and accommodation planning</title>
+            <prop name="label" value="13.1.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <prop name="advisory-clauses" value="should" />
+            <part id="s17-13.1.1_smt" name="statement">
+               <p>Careful site selection and accommodation planning of a purpose-built computer installation shall be conducted. Reference to the security specifications for construction of special installation or office as standard should be made.</p>
+            </part>
+         </control>
+         <control id="s17-13.1.2" class="policy-statement">
+            <title>Physical security of data centres and computer rooms</title>
+            <prop name="label" value="13.1.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-13.1.2_smt" name="statement">
+               <p>Data centres and computer rooms shall have good physical security and strong protection from disaster and security threats, whether natural or caused by other reasons, in order to minimise the extent of loss and disruption.</p>
+            </part>
+         </control>
+         <control id="s17-13.1.3" class="policy-statement">
+            <title>Government physical security requirements by classification</title>
+            <prop name="label" value="13.1.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-13.1.3_smt" name="statement">
+               <p>Data centres and computer rooms shall comply with the relevant government requirements on physical security according to the classification of the information system housed.</p>
+            </part>
+         </control>
+         <control id="s17-13.1.4" class="policy-statement">
+            <title>Authorised access list for restricted computing areas</title>
+            <prop name="label" value="13.1.4." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-13.1.4_smt" name="statement">
+               <p>A list of persons who are authorised to gain access to data centres, computer rooms or other areas supporting critical activities, where computer equipment and data are located or stored, shall be kept up-to-date and be reviewed periodically.</p>
+            </part>
+         </control>
+         <control id="s17-13.1.5" class="policy-statement">
+            <title>Securing of access keys, cards and entry credentials</title>
+            <prop name="label" value="13.1.5." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-13.1.5_smt" name="statement">
+               <p>All access keys, cards, passwords, etc., for entry to any of the information systems and networks shall be physically secured or subject to well-defined and strictly enforced security procedures.</p>
+            </part>
+         </control>
+         <control id="s17-13.1.6" class="policy-statement">
+            <title>Supervision and recording of visitors</title>
+            <prop name="label" value="13.1.6." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-13.1.6_smt" name="statement">
+               <p>All visitors to data centres or computer rooms shall be monitored at all times by authorised staff. A visitor access record shall be kept and properly maintained for audit purposes.</p>
+            </part>
+         </control>
+         <control id="s17-13.1.7" class="policy-statement">
+            <title>Security of offices</title>
+            <prop name="label" value="13.1.7." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <prop name="advisory-clauses" value="should" />
+            <part id="s17-13.1.7_smt" name="statement">
+               <p>All staff shall ensure the security of their offices. Offices that can be directly accessed from public areas and contain information systems or information assets should be locked up when not in use or after office hours.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-13.2" class="topic">
+         <title>Equipment</title>
+         <prop name="label" value="13.2." />
+         <control id="s17-13.2.1" class="policy-statement">
+            <title>Secure placement and inspection of information systems</title>
+            <prop name="label" value="13.2.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-13.2.1_smt" name="statement">
+               <p>All information systems shall be placed in a secure environment or attended by staff to prevent unauthorised access. Regular inspection of equipment and communication facilities shall be performed to ensure continuous availability and failure detection.</p>
+            </part>
+         </control>
+         <control id="s17-13.2.2" class="policy-statement">
+            <title>Safeguarding of mobile devices and removable media</title>
+            <prop name="label" value="13.2.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-13.2.2_smt" name="statement">
+               <p>Staff in possession of mobile devices or removable media for business purposes shall safeguard the equipment in his/her possession and shall not leave the equipment unattended without proper security measures.</p>
+            </part>
+         </control>
+         <control id="s17-13.2.3" class="policy-statement">
+            <title>Removal of IT equipment from sites</title>
+            <prop name="label" value="13.2.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-13.2.3_smt" name="statement">
+               <p>IT equipment shall not be taken away from sites without proper control.</p>
+            </part>
+         </control>
+         <control id="s17-13.2.4" class="policy-statement">
+            <title>Session termination and re-authentication on inactivity</title>
+            <prop name="label" value="13.2.4." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-13.2.4_smt" name="statement">
+               <p>If there has been no activity for a pre-defined period of time, to prevent illegal system access attempts, re-authentication shall be activated, or the logon session and connection shall be terminated. Also, the user workstation shall be switched off, if appropriate, before leaving work for the day or before a prolonged period of inactivity.</p>
+            </part>
+         </control>
+         <control id="s17-13.2.5" class="policy-statement">
+            <title>Positioning of display screens showing classified information</title>
+            <prop name="label" value="13.2.5." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-13.2.5_smt" name="statement">
+               <p>The display screen of an information system on which classified information can be viewed shall be carefully positioned so that unauthorised persons cannot readily view it.</p>
+            </part>
+         </control>
+      </group>
+   </group>
+   <group id="s17-14" class="security-area">
+      <title>Operations Security</title>
+      <prop name="label" value="14." />
+      <part id="s17-14_ovw" name="overview">
+         <p>B/Ds shall ensure secure operations of information systems, protect the information systems from malware, log IT processes and events, monitor suspicious activities, and prevent exploitation of technical vulnerabilities.</p>
+      </part>
+      <group id="s17-14.1" class="topic">
+         <title>Operational Procedures and Responsibilities</title>
+         <prop name="label" value="14.1." />
+         <control id="s17-14.1.1" class="policy-statement">
+            <title>Principle of least functionality</title>
+            <prop name="label" value="14.1.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.1.1_smt" name="statement">
+               <p>B/Ds shall manage information systems using the principle of least functionality with all unnecessary services or components removed or restricted.</p>
+            </part>
+         </control>
+         <control id="s17-14.1.2" class="policy-statement">
+            <title>Consideration of changes affecting security mechanisms</title>
+            <prop name="label" value="14.1.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.1.2_smt" name="statement">
+               <p>Changes affecting existing security protection mechanisms shall be carefully considered.</p>
+            </part>
+         </control>
+         <control id="s17-14.1.3" class="policy-statement">
+            <title>Documented operational and administrative procedures</title>
+            <prop name="label" value="14.1.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.1.3_smt" name="statement">
+               <p>Operational and administrative procedures for information systems shall be properly documented, followed, and reviewed periodically.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-14.2" class="topic">
+         <title>Protection from Malware</title>
+         <prop name="label" value="14.2." />
+         <control id="s17-14.2.1" class="policy-statement">
+            <title>Anti-malware coverage</title>
+            <prop name="label" value="14.2.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.2.1_smt" name="statement">
+               <p>Anti-malware protection shall be enabled on all local area network servers, personal computers, mobile devices, and computers connecting to the government internal network via a remote access channel.</p>
+            </part>
+         </control>
+         <control id="s17-14.2.2" class="policy-statement">
+            <title>Currency of malware definitions and engines</title>
+            <prop name="label" value="14.2.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.2.2_smt" name="statement">
+               <p>B/Ds shall protect their information systems from malware. Malware definitions, as well as their detection and repair engines, shall be updated regularly and whenever necessary.</p>
+            </part>
+         </control>
+         <control id="s17-14.2.3" class="policy-statement">
+            <title>Media and files from unknown sources</title>
+            <prop name="label" value="14.2.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.2.3_smt" name="statement">
+               <p>Storage media and files from unknown source or origin shall not be used unless the storage media and files have been checked and cleaned for malware.</p>
+            </part>
+         </control>
+         <control id="s17-14.2.4" class="policy-statement">
+            <title>Prohibition on introducing malware</title>
+            <prop name="label" value="14.2.4." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.2.4_smt" name="statement">
+               <p>Users shall not intentionally write, generate, copy, propagate, execute or involve in introducing malware.</p>
+            </part>
+         </control>
+         <control id="s17-14.2.5" class="policy-statement">
+            <title>Software from trustworthy sources only</title>
+            <prop name="label" value="14.2.5." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.2.5_smt" name="statement">
+               <p>Computers and networks shall only run software that comes from trustworthy sources.</p>
+            </part>
+         </control>
+         <control id="s17-14.2.6" class="policy-statement">
+            <title>Blocking of non-business websites</title>
+            <prop name="label" value="14.2.6." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="best-practice" />
+            <part id="s17-14.2.6_smt" name="statement">
+               <p>B/Ds should consider the value versus inconvenience of implementing technologies to block non-business websites.</p>
+            </part>
+         </control>
+         <control id="s17-14.2.7" class="policy-statement">
+            <title>Screening of downloads from the Internet</title>
+            <prop name="label" value="14.2.7." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.2.7_smt" name="statement">
+               <p>All software and files downloaded from the Internet shall be screened and verified with an anti-malware solution.</p>
+            </part>
+         </control>
+         <control id="s17-14.2.8" class="policy-statement">
+            <title>Execution of mobile code from the Internet</title>
+            <prop name="label" value="14.2.8." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="best-practice" />
+            <part id="s17-14.2.8_smt" name="statement">
+               <p>Staff should not execute mobile code or software downloaded from the Internet unless the code is from a known and trusted source.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-14.3" class="topic">
+         <title>Backup</title>
+         <prop name="label" value="14.3." />
+         <control id="s17-14.3.1" class="policy-statement">
+            <title>Regular backups</title>
+            <prop name="label" value="14.3.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.3.1_smt" name="statement">
+               <p>Backups shall be carried out at regular intervals.</p>
+            </part>
+         </control>
+         <control id="s17-14.3.2" class="policy-statement">
+            <title>Backup and recovery policies</title>
+            <prop name="label" value="14.3.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.3.2_smt" name="statement">
+               <p>B/Ds shall establish and implement backup and recovery policies for their information systems.</p>
+            </part>
+         </control>
+         <control id="s17-14.3.3" class="policy-statement">
+            <title>Review of backup activity and restoration testing</title>
+            <prop name="label" value="14.3.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.3.3_smt" name="statement">
+               <p>Backup activities shall be reviewed regularly. Backup restoration tests shall be conducted regularly. The frequency of backup reviews and restoration tests shall be defined and documented.</p>
+            </part>
+         </control>
+         <control id="s17-14.3.4" class="policy-statement">
+            <title>Protection of backup media</title>
+            <prop name="label" value="14.3.4." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="best-practice" />
+            <part id="s17-14.3.4_smt" name="statement">
+               <p>Backup media should also be protected against unauthorised access, misuse or corruption.</p>
+            </part>
+         </control>
+         <control id="s17-14.3.5" class="policy-statement">
+            <title>Offsite and disconnected copies of crucial backups</title>
+            <prop name="label" value="14.3.5." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.3.5_smt" name="statement">
+               <p>Backup media containing business essential and/or crucial information shall be sited at a safe distance from the main site in order to avoid damage arising from a disaster at the main site. A copy which is disconnected from information systems shall be stored in order to avoid corruption of backup data when an information system is compromised.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-14.4" class="topic">
+         <title>Logging</title>
+         <prop name="label" value="14.4." />
+         <control id="s17-14.4.1" class="policy-statement">
+            <title>Logging policy and retention period</title>
+            <prop name="label" value="14.4.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.4.1_smt" name="statement">
+               <p>B/Ds shall define and document policies relating to the logging of activities of information systems under their control (including the retention period) according to the business needs and data classification.</p>
+            </part>
+         </control>
+         <control id="s17-14.4.2" class="policy-statement">
+            <title>Sufficiency of log content for audit</title>
+            <prop name="label" value="14.4.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.4.2_smt" name="statement">
+               <p>Any log kept shall provide sufficient information to support comprehensive audits of the effectiveness of and compliance with security measures.</p>
+            </part>
+         </control>
+         <control id="s17-14.4.3" class="policy-statement">
+            <title>Retention and protection of logs</title>
+            <prop name="label" value="14.4.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.4.3_smt" name="statement">
+               <p>Logs shall be retained for a period commensurate with their usefulness as an audit tool. During this period, such logs shall be secured such that they cannot be modified and can only be read by authorised persons.</p>
+            </part>
+         </control>
+         <control id="s17-14.4.4" class="policy-statement">
+            <title>Restriction on profiling users from logs</title>
+            <prop name="label" value="14.4.4." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.4.4_smt" name="statement">
+               <p>Logs shall not be used to profile the activity of a particular user unless it relates to a necessary audit activity as approved by a directorate officer.</p>
+            </part>
+         </control>
+         <control id="s17-14.4.5" class="policy-statement">
+            <title>Clock synchronisation to a trusted time source</title>
+            <prop name="label" value="14.4.5." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.4.5_smt" name="statement">
+               <p>The clocks of information systems shall be synchronised to a trusted time source.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-14.5" class="topic">
+         <title>Control of Operational Environment</title>
+         <prop name="label" value="14.5." />
+         <control id="s17-14.5.1" class="policy-statement">
+            <title>Controlled installation of equipment and software</title>
+            <prop name="label" value="14.5.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.5.1_smt" name="statement">
+               <p>Installation of all computer equipment and software shall be done under control and audit.</p>
+            </part>
+         </control>
+         <control id="s17-14.5.2" class="policy-statement">
+            <title>Change control and change records</title>
+            <prop name="label" value="14.5.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.5.2_smt" name="statement">
+               <p>Changes to information systems shall be controlled by the use of change control procedures. Change records shall be maintained to keep track of the applied changes.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-14.6" class="topic">
+         <title>Technical Vulnerability Management</title>
+         <prop name="label" value="14.6." />
+         <control id="s17-14.6.1" class="policy-statement">
+            <title>Vulnerability management process</title>
+            <prop name="label" value="14.6.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.6.1_smt" name="statement">
+               <p>B/Ds shall implement vulnerability management processes, which include identifying, evaluating, mitigating, and tracking of vulnerabilities of their information systems.</p>
+            </part>
+         </control>
+         <control id="s17-14.6.2" class="policy-statement">
+            <title>Risk-based patch management strategy</title>
+            <prop name="label" value="14.6.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.6.2_smt" name="statement">
+               <p>Depending on the risk level, B/Ds shall determine the appropriate patch management strategy, including patch checking and patching frequency for their information systems. B/Ds shall adopt a risk-based approach to determine the patching schedule of each vulnerability by considering its potential impact and the possibility of being exploited. All servers and related devices deployed in Internet-facing information systems shall be subject to stringent patch management.</p>
+            </part>
+         </control>
+         <control id="s17-14.6.3" class="policy-statement">
+            <title>Application of security patches and compensating measures</title>
+            <prop name="label" value="14.6.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.6.3_smt" name="statement">
+               <p>B/Ds shall protect their information systems from known vulnerabilities by applying the latest security patches recommended by the product vendors according to the patch management strategy or implementing other compensating security measures.</p>
+            </part>
+         </control>
+         <control id="s17-14.6.4" class="policy-statement">
+            <title>Risk evaluation and testing before patching</title>
+            <prop name="label" value="14.6.4." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="best-practice" />
+            <part id="s17-14.6.4_smt" name="statement">
+               <p>Before security patches are applied, proper risk evaluation and testing should be conducted to minimise the undesirable effects on the information systems.</p>
+            </part>
+         </control>
+         <control id="s17-14.6.5" class="policy-statement">
+            <title>Prohibition on unauthorised application software</title>
+            <prop name="label" value="14.6.5." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.6.5_smt" name="statement">
+               <p>No unauthorised application software shall be loaded onto a government information system without prior approval from the officer as designated by the B/D.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-14.7" class="topic">
+         <title>IT Security Threat Management</title>
+         <prop name="label" value="14.7." />
+         <control id="s17-14.7.1" class="policy-statement">
+            <title>Threat identification, detection and monitoring mechanism</title>
+            <prop name="label" value="14.7.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.7.1_smt" name="statement">
+               <p>B/Ds shall establish a threat identification, detection and monitoring mechanism and review the mechanism regularly to ensure its effectiveness concerning the nature of information systems and technology advancements.</p>
+            </part>
+         </control>
+         <control id="s17-14.7.2" class="policy-statement">
+            <title>Regular checking of log records and error reporting</title>
+            <prop name="label" value="14.7.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-14.7.2_smt" name="statement">
+               <p>Regular checking on log records, especially on system/application where classified information is processed/stored, shall be performed, not only on the completeness but also the integrity of the log records. All system and application errors which are suspected to be triggered as a result of security breaches shall be reported and logged.</p>
+            </part>
+         </control>
+      </group>
+   </group>
+   <group id="s17-15" class="security-area">
+      <title>Communications Security</title>
+      <prop name="label" value="15." />
+      <part id="s17-15_ovw" name="overview">
+         <p>B/Ds shall ensure the security of the information transferred within the Government and with any external parties.</p>
+      </part>
+      <group id="s17-15.1" class="topic">
+         <title>Network Security Management</title>
+         <prop name="label" value="15.1." />
+         <control id="s17-15.1.1" class="policy-statement">
+            <title>Protection of internal network and configuration information</title>
+            <prop name="label" value="15.1.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-15.1.1_smt" name="statement">
+               <p>Internal network addresses, configurations and related system or network information shall be properly maintained and shall not be publicly released without the approval of the concerned B/D.</p>
+            </part>
+         </control>
+         <control id="s17-15.1.2" class="policy-statement">
+            <title>Protection of internal networks with external connections</title>
+            <prop name="label" value="15.1.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-15.1.2_smt" name="statement">
+               <p>All internal networks with connections to other government networks or publicly accessible computer networks shall be properly protected.</p>
+            </part>
+         </control>
+         <control id="s17-15.1.3" class="policy-statement">
+            <title>Configuration and administration of communication systems</title>
+            <prop name="label" value="15.1.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-15.1.3_smt" name="statement">
+               <p>Proper configuration and administration of information/communication systems is required and shall be reviewed regularly.</p>
+            </part>
+         </control>
+         <control id="s17-15.1.4" class="policy-statement">
+            <title>Network segregation into security domains</title>
+            <prop name="label" value="15.1.4." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-15.1.4_smt" name="statement">
+               <p>B/Ds shall divide their networks into separate network domains to create security boundaries and have better control between them.</p>
+            </part>
+         </control>
+         <control id="s17-15.1.5" class="policy-statement">
+            <title>Security of inter-network connections</title>
+            <prop name="label" value="15.1.5." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-15.1.5_smt" name="statement">
+               <p>Connections made to other networks shall not compromise the security of information processed at another, and vice versa. B/Ds shall define and implement proper security measures to ensure the security level of the departmental information system being connected with another information system under the control of another B/D or external party is not downgraded.</p>
+            </part>
+         </control>
+         <control id="s17-15.1.6" class="policy-statement">
+            <title>Connection of unauthorised and privately-owned resources</title>
+            <prop name="label" value="15.1.6." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-15.1.6_smt" name="statement">
+               <p>Unauthorised computer resources including those privately-owned shall not be connected to government internal network. If there is an operational necessity, approval from the DITSO shall be sought. B/Ds shall ensure that such usage of computer resources conforms to the same IT security requirements.</p>
+            </part>
+         </control>
+         <control id="s17-15.1.7" class="policy-statement">
+            <title>Documentation and control of wireless communications</title>
+            <prop name="label" value="15.1.7." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-15.1.7_smt" name="statement">
+               <p>B/Ds shall document, monitor, and control wireless communications with connection to government internal network.</p>
+            </part>
+         </control>
+         <control id="s17-15.1.8" class="policy-statement">
+            <title>Authentication and encryption for wireless communications</title>
+            <prop name="label" value="15.1.8." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-15.1.8_smt" name="statement">
+               <p>Proper authentication and encryption security controls shall be employed to protect data communication over wireless communications with connection to government internal network.</p>
+            </part>
+         </control>
+         <control id="s17-15.1.9" class="policy-statement">
+            <title>Internet access through controlled gateways</title>
+            <prop name="label" value="15.1.9." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <prop name="advisory-clauses" value="may" />
+            <part id="s17-15.1.9_smt" name="statement">
+               <p>All Internet access shall be either through centrally arranged Internet gateways or B/D’s own Internet gateway implemented with secure architecture and proper security measures. In circumstances where this is not feasible or having regard to the mode of use, B/Ds may consider allowing Internet access through stand-alone machines, provided that there is an approval and control mechanism at an appropriate level in the B/Ds.</p>
+            </part>
+            <part id="s17-15.1.9_note" name="note">
+               <title>Footnote in the source document</title>
+               <p>Such modes of use may include, for example, Internet surfing, electronic message exchange, and the use of official, portable computers while on business trip. The relevant stand-alone machines must still be protected by any applicable security mechanisms.</p>
+            </part>
+         </control>
+         <control id="s17-15.1.10" class="policy-statement">
+            <title>Simultaneous connection to internal and external networks</title>
+            <prop name="label" value="15.1.10." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-15.1.10_smt" name="statement">
+               <p>Staff shall not connect workstations and mobile devices to an external network by means of a communication device, such as a dial-up modem, wireless interface, or broadband link, if the workstations or mobile devices are simultaneously connected to a government internal network, unless with the approval from the DITSO.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-15.2" class="topic">
+         <title>Information Transfer</title>
+         <prop name="label" value="15.2." />
+         <control id="s17-15.2.1" class="policy-statement">
+            <title>Transmission of information above CONFIDENTIAL</title>
+            <prop name="label" value="15.2.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-15.2.1_smt" name="statement">
+               <p>Information classified as higher than CONFIDENTIAL shall be transmitted only under encryption and inside an isolated LAN approved by the Government Security Officer with the technical endorsement of DPO.</p>
+            </part>
+         </control>
+         <control id="s17-15.2.2" class="policy-statement">
+            <title>Encryption of CONFIDENTIAL and RESTRICTED information in transit</title>
+            <prop name="label" value="15.2.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <prop name="advisory-clauses" value="should" />
+            <part id="s17-15.2.2_smt" name="statement">
+               <p>CONFIDENTIAL/RESTRICTED information shall be encrypted when transmitted over an un-trusted communication network, and should be encrypted during transmission in any communication network as far as practicable.</p>
+            </part>
+         </control>
+         <control id="s17-15.2.3" class="policy-statement">
+            <title>Email transmission of classified information</title>
+            <prop name="label" value="15.2.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-15.2.3_smt" name="statement">
+               <p>Email transmission of classified information shall be transmitted only on an information system approved by the Government Security Officer subject to the technical endorsement of DPO.</p>
+            </part>
+         </control>
+         <control id="s17-15.2.4" class="policy-statement">
+            <title>Recording, retention and destruction of email messages</title>
+            <prop name="label" value="15.2.4." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-15.2.4_smt" name="statement">
+               <p>Systems administrators shall establish and maintain a systematic process for the recording, retention, and destruction of electronic mail messages and accompanying logs.</p>
+            </part>
+         </control>
+         <control id="s17-15.2.5" class="policy-statement">
+            <title>Protection of internal email address lists</title>
+            <prop name="label" value="15.2.5." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-15.2.5_smt" name="statement">
+               <p>Internal email address lists containing entries for authorised users or government sites shall be properly maintained and protected from unauthorised access and modification.</p>
+            </part>
+         </control>
+         <control id="s17-15.2.6" class="policy-statement">
+            <title>Transfer agreements with external parties</title>
+            <prop name="label" value="15.2.6." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-15.2.6_smt" name="statement">
+               <p>Agreement on the secure transfer of classified information between B/Ds and external parties shall be established and documented.</p>
+            </part>
+         </control>
+         <control id="s17-15.2.7" class="policy-statement">
+            <title>Handling of messages from suspicious sources</title>
+            <prop name="label" value="15.2.7." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="best-practice" />
+            <part id="s17-15.2.7_smt" name="statement">
+               <p>Electronic messages from suspicious sources should not be opened or forwarded.</p>
+            </part>
+         </control>
+      </group>
+   </group>
+   <group id="s17-16" class="security-area">
+      <title>System Acquisition, Development and Maintenance</title>
+      <prop name="label" value="16." />
+      <part id="s17-16_ovw" name="overview">
+         <p>B/Ds shall ensure that security is an integral part of information systems across the entire life cycle and isolate the development, system testing, acceptance testing, and live operation environments whenever possible.</p>
+      </part>
+      <group id="s17-16.1" class="topic">
+         <title>Security Requirements of Information Systems</title>
+         <prop name="label" value="16.1." />
+         <control id="s17-16.1.1" class="policy-statement">
+            <title>Security planning for systems under development</title>
+            <prop name="label" value="16.1.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-16.1.1_smt" name="statement">
+               <p>Security planning and implementation of appropriate security measures and controls for systems under development according to the systems’ security requirements shall be included.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-16.2" class="topic">
+         <title>Security in Development and Support Processes</title>
+         <prop name="label" value="16.2." />
+         <control id="s17-16.2.1" class="policy-statement">
+            <title>Secure development environments</title>
+            <prop name="label" value="16.2.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-16.2.1_smt" name="statement">
+               <p>B/Ds shall establish and appropriately secure development environments for system development and integration efforts that cover the entire system development life cycle.</p>
+            </part>
+         </control>
+         <control id="s17-16.2.2" class="policy-statement">
+            <title>Protection of documentation and source code</title>
+            <prop name="label" value="16.2.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-16.2.2_smt" name="statement">
+               <p>Documentation, program source code and listings of applications shall be properly maintained and restricted for access on a need-to-know basis.</p>
+            </part>
+         </control>
+         <control id="s17-16.2.3" class="policy-statement">
+            <title>Testing and review of security measures before implementation</title>
+            <prop name="label" value="16.2.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-16.2.3_smt" name="statement">
+               <p>Formal testing and review of security measures shall be performed prior to implementation.</p>
+            </part>
+         </control>
+         <control id="s17-16.2.4" class="policy-statement">
+            <title>Application integrity and environment separation</title>
+            <prop name="label" value="16.2.4." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-16.2.4_smt" name="statement">
+               <p>The integrity of an application shall be maintained with appropriate security measures such as version control mechanism and separation of environments for development, system testing, acceptance testing, and live operation.</p>
+            </part>
+         </control>
+         <control id="s17-16.2.5" class="policy-statement">
+            <title>Documented change control procedures</title>
+            <prop name="label" value="16.2.5." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-16.2.5_smt" name="statement">
+               <p>Change control procedures for requesting and approving program/system changes shall be documented.</p>
+            </part>
+         </control>
+         <control id="s17-16.2.6" class="policy-statement">
+            <title>Advising staff of the impact of security changes</title>
+            <prop name="label" value="16.2.6." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-16.2.6_smt" name="statement">
+               <p>B/Ds shall ensure that staff are formally advised of the impact of security changes and usage on information systems.</p>
+            </part>
+         </control>
+         <control id="s17-16.2.7" class="policy-statement">
+            <title>Developer access to classified production information</title>
+            <prop name="label" value="16.2.7." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-16.2.7_smt" name="statement">
+               <p>Application development and system support staff shall not be permitted to access classified information in the production systems unless approval from Information Owner is obtained.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-16.3" class="topic">
+         <title>Test Data</title>
+         <prop name="label" value="16.3." />
+         <control id="s17-16.3.1" class="policy-statement">
+            <title>Selection and protection of test data</title>
+            <prop name="label" value="16.3.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-16.3.1_smt" name="statement">
+               <p>Test data shall be carefully selected, protected and controlled commensurate with its classification. If the use of classified data from production is genuinely required, the process shall be reviewed, documented and approved by Information Owner.</p>
+            </part>
+         </control>
+      </group>
+   </group>
+   <group id="s17-17" class="security-area">
+      <title>Outsourcing Security</title>
+      <prop name="label" value="17." />
+      <part id="s17-17_ovw" name="overview">
+         <p>B/Ds shall ensure the protection of information systems and assets that are accessible by external service providers.</p>
+      </part>
+      <group id="s17-17.1" class="topic">
+         <title>IT Security in Outsourcing Service</title>
+         <prop name="label" value="17.1." />
+         <control id="s17-17.1.1" class="policy-statement">
+            <title>External service provider compliance with departmental policy</title>
+            <prop name="label" value="17.1.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-17.1.1_smt" name="statement">
+               <p>External service providers shall observe and comply with B/Ds’ departmental IT security policy and other information security requirements issued by the Government.</p>
+            </part>
+         </control>
+         <control id="s17-17.1.2" class="policy-statement">
+            <title>Risk assessment and security requirements for outsourced services</title>
+            <prop name="label" value="17.1.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-17.1.2_smt" name="statement">
+               <p>B/Ds utilising external services or facilities shall identify and assess the risks to the government data and business operations. Security measures, service levels and management requirements of external services or facilities commensurate with the data classification and business requirements shall be documented and implemented. Security responsibilities of external service providers shall be defined and agreed upon.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-17.2" class="topic">
+         <title>Outsourcing Service Delivery Management</title>
+         <prop name="label" value="17.2." />
+         <control id="s17-17.2.1" class="policy-statement">
+            <title>Monitoring and review of external service providers</title>
+            <prop name="label" value="17.2.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-17.2.1_smt" name="statement">
+               <p>B/Ds shall monitor and review with external service providers to ensure that operations by external service providers are documented and managed properly. Confidentiality and non-disclosure agreements shall be properly managed and reviewed when changes occur that affect the security requirement.</p>
+            </part>
+         </control>
+         <control id="s17-17.2.2" class="policy-statement">
+            <title>Audit and compliance monitoring rights</title>
+            <prop name="label" value="17.2.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-17.2.2_smt" name="statement">
+               <p>B/Ds shall reserve audit and compliance monitoring rights to ensure external service providers have implemented sufficient controls on government information systems, facilities and data. Alternatively, the external service providers shall provide security audit reports periodically to prove the measures put in place are satisfactory.</p>
+            </part>
+         </control>
+         <control id="s17-17.2.3" class="policy-statement">
+            <title>Clearance of government data on service termination</title>
+            <prop name="label" value="17.2.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-17.2.3_smt" name="statement">
+               <p>B/Ds shall ensure all government data in external services or facilities are cleared or destroyed according to government security requirements at the expiry or termination of the service or upon request of the Government.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-17.3" class="topic">
+         <title>Cloud Computing Security</title>
+         <prop name="label" value="17.3." />
+         <control id="s17-17.3.1" class="policy-statement">
+            <title>Restriction on public cloud for RESTRICTED information</title>
+            <prop name="label" value="17.3.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-17.3.1_smt" name="statement">
+               <p>Information classified as RESTRICTED or above shall not be stored in or processed by public cloud services.</p>
+            </part>
+         </control>
+         <control id="s17-17.3.2" class="policy-statement">
+            <title>Shared responsibility with cloud service providers</title>
+            <prop name="label" value="17.3.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-17.3.2_smt" name="statement">
+               <p>Before signing an agreement with a cloud service provider, B/Ds shall ensure that the shared responsibilities of both parties are clearly defined, documented, and understood.</p>
+            </part>
+         </control>
+      </group>
+   </group>
+   <group id="s17-18" class="security-area">
+      <title>Security Incident Management</title>
+      <prop name="label" value="18." />
+      <part id="s17-18_ovw" name="overview">
+         <p>B/Ds shall ensure a consistent and effective approach to the management of information security incidents.</p>
+      </part>
+      <group id="s17-18.1" class="topic">
+         <title>Management of Security Incidents and Improvements</title>
+         <prop name="label" value="18.1." />
+         <control id="s17-18.1.1" class="policy-statement">
+            <title>Incident detection and monitoring mechanism</title>
+            <prop name="label" value="18.1.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-18.1.1_smt" name="statement">
+               <p>B/Ds shall establish an incident detection and monitoring mechanism to detect, contain and ultimately prevent security incidents.</p>
+            </part>
+         </control>
+         <control id="s17-18.1.2" class="policy-statement">
+            <title>Retention of logs and supporting evidence</title>
+            <prop name="label" value="18.1.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-18.1.2_smt" name="statement">
+               <p>B/Ds shall ensure that system logs and other supporting information are retained for the proof and tracing of security incidents.</p>
+            </part>
+         </control>
+         <control id="s17-18.1.3" class="policy-statement">
+            <title>Security incident response plan</title>
+            <prop name="label" value="18.1.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-18.1.3_smt" name="statement">
+               <p>B/Ds shall establish, document, test and maintain a security incident response plan for their information systems.</p>
+            </part>
+         </control>
+         <control id="s17-18.1.4" class="policy-statement">
+            <title>Staff awareness of the incident response plan</title>
+            <prop name="label" value="18.1.4." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-18.1.4_smt" name="statement">
+               <p>Staff shall be made aware of the security incident response plan that is in place and shall observe and follow it accordingly.</p>
+            </part>
+         </control>
+         <control id="s17-18.1.5" class="policy-statement">
+            <title>Reporting of observed and suspected incidents</title>
+            <prop name="label" value="18.1.5." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-18.1.5_smt" name="statement">
+               <p>Any observed or suspected security incidents or security problems in information systems or services shall be reported immediately to the responsible party and handled according to the incident handling procedure.</p>
+            </part>
+         </control>
+         <control id="s17-18.1.6" class="policy-statement">
+            <title>Disclosure of incident information</title>
+            <prop name="label" value="18.1.6." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-18.1.6_smt" name="statement">
+               <p>Staff shall not disclose information about the individuals, B/Ds or specific systems that have suffered from damages caused by computer crimes and computer abuses or the specific methods used to exploit certain system vulnerabilities to any people other than those who are handling the incident and responsible for the security of such systems, or authorised investigators involving in the investigation of the crime or abuse.</p>
+            </part>
+         </control>
+      </group>
+   </group>
+   <group id="s17-19" class="security-area">
+      <title>IT Security Aspects of Business Continuity Management</title>
+      <prop name="label" value="19." />
+      <part id="s17-19_ovw" name="overview">
+         <p>B/Ds shall ensure the availability of information systems and security considerations embedded in disaster recovery plans.</p>
+      </part>
+      <group id="s17-19.1" class="topic">
+         <title>IT Security Continuity</title>
+         <prop name="label" value="19.1." />
+         <control id="s17-19.1.1" class="policy-statement">
+            <title>Disaster recovery planning and review</title>
+            <prop name="label" value="19.1.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-19.1.1_smt" name="statement">
+               <p>B/Ds shall plan, implement, and regularly review disaster recovery plans to ensure adequate security measures under such situations.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-19.2" class="topic">
+         <title>Resilience</title>
+         <prop name="label" value="19.2." />
+         <control id="s17-19.2.1" class="policy-statement">
+            <title>Resilience to meet availability requirements</title>
+            <prop name="label" value="19.2.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-19.2.1_smt" name="statement">
+               <p>B/Ds shall ensure adequate resilience to meet the availability requirements of IT services and facilities.</p>
+            </part>
+         </control>
+      </group>
+   </group>
+   <group id="s17-20" class="security-area">
+      <title>Compliance</title>
+      <prop name="label" value="20." />
+      <part id="s17-20_ovw" name="overview">
+         <p>B/Ds shall avoid breaches of legal, statutory, regulatory or contractual obligations related to security requirements. Security measures shall be implemented and operated in accordance with the respective security requirements.</p>
+      </part>
+      <group id="s17-20.1" class="topic">
+         <title>Compliance with Legal and Contractual Requirements</title>
+         <prop name="label" value="20.1." />
+         <control id="s17-20.1.1" class="policy-statement">
+            <title>Identification of statutory, regulatory and contractual requirements</title>
+            <prop name="label" value="20.1.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-20.1.1_smt" name="statement">
+               <p>B/Ds shall identify and document all relevant statutory, regulatory and contractual requirements applicable to the operations of each information system.</p>
+            </part>
+         </control>
+         <control id="s17-20.1.2" class="policy-statement">
+            <title>Records evidencing compliance</title>
+            <prop name="label" value="20.1.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-20.1.2_smt" name="statement">
+               <p>B/Ds shall keep records to evidence compliance with security requirements and support audits of effective implementation of corresponding security measures.</p>
+            </part>
+         </control>
+         <control id="s17-20.1.3" class="policy-statement">
+            <title>Compliance with government requirements for classified information</title>
+            <prop name="label" value="20.1.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <prop name="advisory-clauses" value="should" />
+            <part id="s17-20.1.3_smt" name="statement">
+               <p>B/Ds shall comply with relevant government requirements in relation to the security of information systems, including, but not limited to, storage, transmission, processing, and destruction of classified information. Information without any security classification should also be protected from unintentional disclosure.</p>
+            </part>
+         </control>
+         <control id="s17-20.1.4" class="policy-statement">
+            <title>Handling of personal data under the Personal Data (Privacy) Ordinance</title>
+            <prop name="label" value="20.1.4." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <prop name="advisory-clauses" value="should may" />
+            <link href="#61da519c-33af-5e87-b582-aa1c5cef5db9" rel="reference" />
+            <part id="s17-20.1.4_smt" name="statement">
+               <p>Personal Data (Privacy) Ordinance (Cap. 486) shall be observed when handling personal data. All personal data should be classified as RESTRICTED information or above. Depending on the nature and sensitivity of the personal data concerned and the harm that could result from unauthorised or accidental access, processing, erasure or other use of the personal data, a higher classification and appropriate security measures may be required.</p>
+            </part>
+         </control>
+      </group>
+      <group id="s17-20.2" class="topic">
+         <title>Security Reviews</title>
+         <prop name="label" value="20.2." />
+         <control id="s17-20.2.1" class="policy-statement">
+            <title>Security risk assessments and privacy impact assessments</title>
+            <prop name="label" value="20.2.1." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-20.2.1_smt" name="statement">
+               <p>Security risk assessments for information systems and production applications as well as privacy impact assessments for information systems and production applications involving personal data shall be performed at least once every two years. A security risk assessment for information systems as well as a privacy impact assessment for information systems involving personal data shall also be performed before production rollout and prior to major enhancements and changes associated with these systems or applications.</p>
+            </part>
+         </control>
+         <control id="s17-20.2.2" class="policy-statement">
+            <title>Audit of information systems</title>
+            <prop name="label" value="20.2.2." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-20.2.2_smt" name="statement">
+               <p>Audit on information systems shall be performed at least once every two years to ensure the compliance of IT security policies and effective implementation of security measures. The selection of auditors and conduct of audits shall ensure objectivity and impartiality of the audit process. Auditors shall not audit their own work.</p>
+            </part>
+         </control>
+         <control id="s17-20.2.3" class="policy-statement">
+            <title>Control of assessment and audit tooling</title>
+            <prop name="label" value="20.2.3." />
+            <prop name="title-source" value="editorial" />
+            <prop name="conformance" value="mandatory" />
+            <part id="s17-20.2.3_smt" name="statement">
+               <p>Use of software and programs for performing security risk assessment or security audit shall be restricted and controlled.</p>
+            </part>
+         </control>
+      </group>
+   </group>
+   <back-matter>
+      <resource uuid="27de4af5-f638-5fed-acab-e252838b598e">
+         <title>Baseline IT Security Policy [S17]</title>
+         <prop name="source-clause" value="the document itself (section 2.3)" />
+         <citation>
+            <text>Digital Policy Office, The Government of the Hong Kong Special Administrative Region, "Baseline IT Security Policy [S17]"</text>
+         </citation>
+         <rlink href="https://www.govcert.gov.hk/doc/S17_EN.pdf" media-type="application/pdf">
+            <hash algorithm="SHA-256">d3f241463df39bda79cd2c2dd6950a076f4f5f5476a92536b01431c180069dde</hash>
+         </rlink>
+      </resource>
+      <resource uuid="2a8b02de-b1b4-5cec-ac73-72ad3404dec1">
+         <title>The Government of the Hong Kong Special Administrative Region, “Security Regulations”</title>
+         <prop name="source-clause" value="section 3, normative reference a)" />
+         <citation>
+            <text>The Government of the Hong Kong Special Administrative Region, “Security Regulations”</text>
+         </citation>
+      </resource>
+      <resource uuid="21771954-751c-5223-9d05-b0962796bbc2">
+         <title>Civil Service Bureau, “Civil Service Regulations”</title>
+         <prop name="source-clause" value="section 3, normative reference b)" />
+         <citation>
+            <text>Civil Service Bureau, “Civil Service Regulations”</text>
+         </citation>
+      </resource>
+      <resource uuid="9aae8811-82c1-536b-aff0-c26f5add3e95">
+         <title>Information security, cybersecurity and privacy protection – Information security management systems – Requirements, ISO/IEC 27001:2022</title>
+         <prop name="source-clause" value="section 3, normative reference c)" />
+         <citation>
+            <text>Information security, cybersecurity and privacy protection – Information security management systems – Requirements, ISO/IEC 27001:2022, dated 25 October 2022</text>
+         </citation>
+      </resource>
+      <resource uuid="f7a356a9-0cba-5b09-ad7e-4550ef6f7c5c">
+         <title>Information security, cybersecurity and privacy protection – Information security controls, ISO/IEC 27002:2022</title>
+         <prop name="source-clause" value="section 3, normative reference d)" />
+         <citation>
+            <text>Information security, cybersecurity and privacy protection – Information security controls, ISO/IEC 27002:2022, dated 15 February 2022</text>
+         </citation>
+      </resource>
+      <resource uuid="d8f4d832-c548-5bbd-9ff4-a864a8f3c6d0">
+         <title>Information security technology – Baseline for classified protection of cybersecurity, GB/T 22239-2019</title>
+         <prop name="source-clause" value="section 3, normative reference e)" />
+         <citation>
+            <text>Information security technology – Baseline for classified protection of cybersecurity, GB/T 22239-2019, dated 10 May 2019</text>
+         </citation>
+      </resource>
+      <resource uuid="28029378-2896-565d-a82b-45783fa278e5">
+         <title>General Circular No. 6/2024 – Strengthening the Governance and Security of IT Systems</title>
+         <prop name="source-clause" value="section 3, normative reference f)" />
+         <citation>
+            <text>General Circular No. 6/2024 – Strengthening the Governance and Security of IT Systems, dated 6 August 2024</text>
+         </citation>
+      </resource>
+      <resource uuid="55d9fd3f-13cf-5699-b9e8-60bf0fa58d26">
+         <title>IT Security Guidelines [G3]</title>
+         <prop name="source-clause" value="section 2.3, Government IT Security Documents" />
+         <citation>
+            <text>Digital Policy Office, The Government of the Hong Kong Special Administrative Region, "IT Security Guidelines [G3]"</text>
+         </citation>
+         <rlink href="https://www.govcert.gov.hk/doc/G3_EN.pdf" media-type="application/pdf" />
+      </resource>
+      <resource uuid="61da519c-33af-5e87-b582-aa1c5cef5db9">
+         <title>Personal Data (Privacy) Ordinance (Cap. 486)</title>
+         <prop name="source-clause" value="cited in sections 7.1.5 and 20.1.4" />
+         <citation>
+            <text>The Government of the Hong Kong Special Administrative Region, "Personal Data (Privacy) Ordinance" (Cap. 486)</text>
+         </citation>
+      </resource>
+   </back-matter>
+</catalog>
