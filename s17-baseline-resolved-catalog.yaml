@@ -493,7 +493,7 @@ catalog:
     - role-id: publisher
       party-uuids:
       - b277d0e2-2997-5601-a582-4b11d6e1bbe7
-    remarks: 'Resolved profile catalog: the S17 catalog filtered to the 142 controls selected by the `s17-baseline`
+    remarks: 'Resolved profile catalog: the S17 catalog filtered to the 142 controls selected by the `s17-baseline-profile`
       profile, with empty groups removed and back-matter reduced to the resources those controls still
       reference.
 

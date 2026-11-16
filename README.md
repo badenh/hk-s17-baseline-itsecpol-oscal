@@ -34,9 +34,8 @@ OSCAL. In this repository we provide:
 - the S17 control catalog — all 142 policy statements across the fourteen
   mandatory security areas, with the Government's own governance roles, glossary and
   normative references
-- OSCAL profiles: one full baseline, plus one per security area for scoping an
-  assessment
-- resolved OSCAL profile catalogs for all of the above
+- one OSCAL profile — the full S17 baseline
+- the resolved profile catalog for it
 - all of it in JSON, XML and YAML
 
 While *unofficial*, we have published this openly to support HKSAR government
@@ -55,23 +54,27 @@ If you are interested in those scripts, please contact the maintainer.
 
 ## Contents
 
-_Last updated: 2026-08-29_
+_Last updated: 2026-11-16_
 
-    catalogs/     the S17 control catalog, 3 formats   =  3 files
-    profiles/     15 profiles × 3 formats              = 45 files
-    resolved/     15 resolved profile catalogs × 3     = 45 files
+    s17-catalog.{json,xml,yaml}                    the S17 control catalog  =  3 files
+    s17-baseline-profile.{json,xml,yaml}           the full baseline profile =  3 files
+    s17-baseline-resolved-catalog.{json,xml,yaml}  resolved profile catalog  =  3 files
+
+Layout is flat: all nine artifacts sit at the repository root and are
+disambiguated by filename prefix.
 
 The version lives in each document's `metadata.version` and is **S17's own
 edition number** — `8.2`, April 2025 — not a build number of ours. All artifacts
 target **OSCAL 1.2.3**, the current NIST release.
 
-Every profile's import href is `../catalogs/s17.json`, a plain relative URI, so
-the tree resolves as-is in `oscal-cli`, in a browser, or in anything else doing
+The profile's import href is `s17-catalog.json` (and `.xml` / `.yaml` for the
+matching serialisations), a plain relative URI resolving alongside the profile,
+so the tree works as-is in `oscal-cli`, in a browser, or in anything else doing
 ordinary relative-URI resolution. Nothing here needs a workspace tool.
 
 ### The catalog
 
-`catalogs/s17.{json,xml,yaml}` — 142 controls across 14 security areas and 36
+`s17-catalog.{json,xml,yaml}` — 142 controls across 14 security areas and 36
 subsections.
 
 | § | Security area | Controls | Subsections |
@@ -133,34 +136,21 @@ they are what makes the controls usable:
   parts and no controls: a definition is not a requirement and should not be
   assessable.
 
-### Profiles and resolved profile catalogs
+### Profile and resolved profile catalog
 
 | Profile | Controls | Resolved profile catalog |
 | --- | ---: | --- |
-| `profiles/s17-baseline.*` | 142 | `resolved/s17-baseline-resolved-catalog.*` |
-| `profiles/area-07-management-responsibilities.*` | 7 | `resolved/area-07-…-resolved-catalog.*` |
-| `profiles/area-08-it-security-policies.*` | 3 | … |
-| `profiles/area-09-human-resource-security.*` | 9 | … |
-| `profiles/area-10-asset-management.*` | 9 | … |
-| `profiles/area-11-access-control.*` | 23 | … |
-| `profiles/area-12-cryptography.*` | 1 | … |
-| `profiles/area-13-physical-and-environmental-security.*` | 12 | … |
-| `profiles/area-14-operations-security.*` | 30 | … |
-| `profiles/area-15-communications-security.*` | 17 | … |
-| `profiles/area-16-system-acquisition-development-and-maintenance.*` | 9 | … |
-| `profiles/area-17-outsourcing-security.*` | 7 | … |
-| `profiles/area-18-security-incident-management.*` | 6 | … |
-| `profiles/area-19-it-security-aspects-of-business-continuity-management.*` | 2 | … |
-| `profiles/area-20-compliance.*` | 7 | … |
+| `s17-baseline-profile.*` | 142 | `s17-baseline-resolved-catalog.*` |
 
 `*` is `json`, `xml` or `yaml`.
 
-**Read this before using the area profiles.** They are **scoping** profiles, not
-baselines. S17 has no assurance levels, no maturity tiers and no risk-graded
-control sets. What `area-11-access-control` gives you is a way to point an
-assessment at one area's 23 controls; the other 119 are not optional, they are
-elsewhere. `s17-baseline` is the profile to assess against unless you have a
-specific reason to narrow.
+There is a **single** profile here and it includes every control in the catalog.
+S17 has no assurance levels, no maturity tiers, no risk-graded control sets and
+no sub-baselines; the whole policy is the baseline. Scoping to a single security
+area is a downstream tailoring decision, not a shape the source document takes,
+so no per-area profiles are published — if you need one, write a tailoring
+profile that imports `s17-baseline-profile` (or `s17-catalog` directly) with
+`include-controls` listing the clause ids you want.
 
 There is deliberately no conformance-graded profile either. 136 of the 142
 statements are "shall" statements, but drawing a line there would require
@@ -168,10 +158,10 @@ deciding which side 11.4.4 falls on — see finding 4 — and that decision is t
 DPO's, not ours. The catalog marks each statement so you can draw the line
 yourself if you are entitled to.
 
-Each resolved catalog is the catalog filtered to its profile's selection, with
-the other areas removed and back-matter reduced to what the retained controls
-still cite. The `s17-definitions` group is kept in all of them, because an
-assessor reading one area still wants S17's own vocabulary.
+The resolved catalog is the baseline profile's selection materialised — in
+practice, the catalog itself with `as-is` merging. The `s17-definitions` group
+is preserved so an assessor reading the resolved artifact still has S17's own
+vocabulary to hand.
 
 ### Working with it
 
@@ -180,15 +170,17 @@ Every control in the catalog, as clause number and title:
 ```bash
 jq -r '.catalog.groups[] | .groups[]? | .controls[]?
        | "\((.props[]|select(.name=="label")).value) \(.title)"' \
-   catalogs/s17.json
+   s17-catalog.json
 ```
 
-The full text of the access control area, ready to paste into a review:
+The full text of the access control area (`s17-11`), ready to paste into a
+review:
 
 ```bash
-jq -r '.catalog.groups[] | .groups[]? | .controls[]?
+jq -r '.catalog.groups[] | select(.id=="s17-11") | .. | objects
+       | select(.parts? and (.parts[]|select(.name=="statement")))
        | "### \((.props[]|select(.name=="label")).value) \(.title)\n\((.parts[]|select(.name=="statement")).prose)\n"' \
-   resolved/area-11-access-control-resolved-catalog.json
+   s17-baseline-resolved-catalog.json
 ```
 
 The 18 statements that carry a best-practice clause as well as a mandatory one —
@@ -197,13 +189,13 @@ where "shall" and "should" are mixed and an auditor needs to read carefully:
 ```bash
 jq -r '.. | objects | select(.props? and (.props[]|select(.name=="advisory-clauses")))
        | "\(.id)  \(.title)"' \
-   catalogs/s17.json
+   s17-catalog.json
 ```
 
 The Government's own role definitions, for populating a system security plan:
 
 ```bash
-jq -r '.catalog.metadata.roles[] | "\(.id)\t\(.title)"' catalogs/s17.json
+jq -r '.catalog.metadata.roles[] | "\(.id)\t\(.title)"' s17-catalog.json
 ```
 
 ## Validation
@@ -226,7 +218,7 @@ checked against:
   the set of clause numbers S17 prints must equal the set of clause labels in
   the catalog, in both directions
 
-Status at last publish: **164 checks, 0 failures**, 31 JSON and 31 XML documents
+Status at last publish: **24 checks, 0 failures**, 3 JSON and 3 XML documents
 valid, 142/142 statements verified verbatim against the source.
 
 Two independent runs of the build produce byte-identical output.
@@ -321,22 +313,22 @@ them. `props[name=advisory-clauses]` marks every one.
   ("B/Ds shall observe these principles") but the document numbers them only as
   bullets. Minting identifiers for them would put non-source identifiers into a
   compliance artefact, so they are not in the catalog. Read section 6 of the PDF.
-- **Area profiles are scoping tools.** What they omit is no less binding.
 - **`conformance` is a marking, not a judgment.** It reports which section 4.2
   convention word a statement uses. `unqualified` does not mean optional — see
   11.4.4 in finding 4.
-- **The profiles carry no party attribution.** The DPO published S17; it did not
-  author these profiles. Attributing a compliance artefact to a government office
-  that has not seen it would be a false statement, so `roles`, `parties` and
-  `responsible-parties` are omitted from the profiles. The catalog names the DPO
-  as `publisher`, which is true.
-- **XML and YAML profiles import their own format.** A JSON profile imports the
-  JSON catalog, an XML profile the XML catalog. This is the one place the three
-  serialisations of a document deliberately differ.
-- **Resolved catalogs are produced natively**, not by an OSCAL profile resolver.
-  The profiles use only `import` + `include-controls`/`include-all` with `as-is`
-  merging and no `modify`, and each resolved catalog is asserted equal to its
-  profile's selection. If you need canonical resolution, run the profiles through
+- **The profile carries no party attribution.** The DPO published S17; it did
+  not author this profile. Attributing a compliance artefact to a government
+  office that has not seen it would be a false statement, so `roles`, `parties`
+  and `responsible-parties` are omitted. The catalog names the DPO as
+  `publisher`, which is true.
+- **XML and YAML profiles import their own format.** The JSON profile imports
+  the JSON catalog, the XML profile the XML catalog, the YAML profile the YAML
+  catalog. This is the one place the three serialisations of a document
+  deliberately differ.
+- **The resolved catalog is produced natively**, not by an OSCAL profile
+  resolver. The profile uses only `import` + `include-all` with `as-is` merging
+  and no `modify`, and the resolved catalog is asserted equal to the profile's
+  selection. If you need canonical resolution, run the profile through
   `oscal-cli`.
 - **This is the English edition only.** GovCERT.HK also publishes S17 in Chinese.
 - **Dates.** `metadata.version` is S17's own edition (`8.2`) and `published` /
